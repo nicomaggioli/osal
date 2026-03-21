@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSAL — Win Government Contracts Faster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+    --black: #000000;
+    --white: #f5f5f7;
+    --gray-1: #1d1d1f;
+    --gray-2: #333336;
+    --gray-3: #6e6e73;
+    --gray-4: #86868b;
+    --gray-5: #d2d2d7;
+    --blue: #2997ff;
+    --blue-h: #5eb5ff;
+    --gold: #c9983e;
+    --teal: #30b3a0;
+    --green: #30d158;
+    --red: #c0524f;
+    --mono: 'IBM Plex Mono', monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:var(--black);
+    color:var(--white);
+    overflow-x:hidden;
+    font-size:17px;
+    line-height:1.47;
+    font-weight:400;
+    letter-spacing:-0.022em;
+}
+::selection{background:var(--blue);color:white}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ── NAV ── */
+.nav{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    height:48px;
+    background:rgba(0,0,0,0.72);
+    backdrop-filter:saturate(180%) blur(20px);
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    display:flex;align-items:center;justify-content:center;
+}
+.nav-inner{
+    width:100%;max-width:1024px;
+    padding:0 22px;
+    display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{
+    font-size:18px;font-weight:800;letter-spacing:0.04em;
+}
+.nav-logo span{color:var(--blue)}
+.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+.nav-links a{font-size:12px;color:var(--gray-5);transition:color 0.2s}
+.nav-links a:hover{color:var(--white)}
+.nav-links .nav-cta{
+    background:var(--blue);color:white;
+    padding:6px 16px;border-radius:980px;
+    font-size:12px;font-weight:500;
+    transition:background 0.2s;
+}
+.nav-links .nav-cta:hover{background:var(--blue-h)}
+
+/* ── TILE SECTION (apple style) ── */
+.tile{
+    width:100%;
+    display:flex;flex-direction:column;align-items:center;
+    text-align:center;
+    padding:80px 0 0;
+    overflow:hidden;
+}
+.tile+.tile{margin-top:12px}
+.tile-dark{background:var(--gray-1)}
+.tile-black{background:var(--black)}
+.tile-label{
+    font-family:var(--mono);
+    font-size:11px;font-weight:600;
+    letter-spacing:0.08em;text-transform:uppercase;
+    color:var(--gray-4);
+    margin-bottom:8px;
+}
+.tile h2{
+    font-size:clamp(40px,6vw,64px);
+    font-weight:700;
+    letter-spacing:-0.04em;
+    line-height:1.05;
+    max-width:800px;
+    padding:0 24px;
+}
+.tile h2 em{font-style:normal;color:var(--blue)}
+.tile h3{
+    font-size:clamp(28px,4vw,48px);
+    font-weight:700;
+    letter-spacing:-0.035em;
+    line-height:1.08;
+    max-width:700px;
+    padding:0 24px;
+}
+.tile .sub{
+    font-size:clamp(17px,2vw,21px);
+    color:var(--gray-4);
+    max-width:520px;
+    padding:0 24px;
+    margin-top:16px;
+    line-height:1.5;
+    font-weight:400;
+}
+.tile .links{
+    display:flex;gap:24px;margin-top:24px;flex-wrap:wrap;justify-content:center;
+    padding:0 24px;
+}
+.link-blue{
+    color:var(--blue);font-size:17px;font-weight:400;
+    display:inline-flex;align-items:center;gap:4px;
+    transition:color 0.2s;
+}
+.link-blue:hover{color:var(--blue-h)}
+.link-blue svg{width:14px;height:14px;fill:currentColor;margin-top:1px}
+
+/* ── HERO ── */
+.hero{
+    padding-top:140px;
+    padding-bottom:0;
+    min-height:100vh;
+    min-height:100svh;
+    display:flex;flex-direction:column;
+    align-items:center;text-align:center;
+    justify-content:center;
+    gap:0;
+    position:relative;
+}
+.hero h1{
+    font-size:clamp(48px,8.5vw,96px);
+    font-weight:800;
+    letter-spacing:-0.045em;
+    line-height:1.0;
+    padding:0 24px;
+    max-width:960px;
+}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero .hero-sub{
+    font-size:clamp(17px,2.2vw,24px);
+    color:var(--gray-4);
+    max-width:540px;
+    padding:0 24px;
+    margin-top:20px;
+    line-height:1.45;
+    font-weight:400;
+}
+.hero .hero-ctas{
+    display:flex;gap:16px;margin-top:32px;flex-wrap:wrap;justify-content:center;
+    padding:0 24px;
+}
+.btn-fill{
+    background:var(--blue);color:white;
+    padding:12px 28px;border-radius:980px;
+    font-size:17px;font-weight:500;
+    transition:all 0.2s;display:inline-flex;align-items:center;gap:6px;
+    border:none;cursor:pointer;font-family:inherit;
+}
+.btn-fill:hover{background:var(--blue-h)}
+.btn-outline{
+    border:1px solid var(--gray-3);color:var(--white);
+    padding:12px 28px;border-radius:980px;
+    font-size:17px;font-weight:500;
+    transition:all 0.2s;display:inline-flex;align-items:center;gap:6px;
+    background:transparent;cursor:pointer;font-family:inherit;
+}
+.btn-outline:hover{border-color:var(--gray-5)}
+
+/* hero anim */
+.hero h1,.hero .hero-sub,.hero .hero-ctas{
+    opacity:0;transform:translateY(16px);
+    animation:up .8s cubic-bezier(.25,1,.5,1) forwards;
+}
+.hero h1{animation-delay:.1s}
+.hero .hero-sub{animation-delay:.25s}
+.hero .hero-ctas{animation-delay:.4s}
+@keyframes up{to{opacity:1;transform:translateY(0)}}
+
+/* ── DASHBOARD MOCKUP (light theme, matches real Alares Hub) ── */
+.dash-wrap{
+    width:100%;max-width:1080px;
+    margin-top:56px;
+    padding:0 24px;
+    opacity:0;transform:translateY(24px) scale(0.98);
+    animation:up .8s cubic-bezier(.25,1,.5,1) .55s forwards;
+}
+.dash{
+    background:#ffffff;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 40px 120px rgba(0,0,0,0.5),0 0 0 1px rgba(255,255,255,0.08);
+}
+.dash-chrome{
+    display:flex;align-items:center;gap:12px;
+    padding:11px 16px;
+    background:#f0f0f0;
+    border-bottom:1px solid #ddd;
+}
+.dots{display:flex;gap:7px}
+.dots i{width:11px;height:11px;border-radius:50%;display:block}
+.dash-title{
+    font-family:var(--mono);
+    font-size:11px;font-weight:500;
+    color:#999;
+    flex:1;text-align:center;padding-right:46px;
+}
+.dash-body{display:flex;min-height:380px}
+
+/* Sidebar — text labels like the real UI */
+.dash-side{
+    width:160px;
+    background:#fafafa;
+    border-right:1px solid #eee;
+    padding:16px 0;
+    display:flex;flex-direction:column;gap:0;
+    font-size:12px;color:#555;
+}
+.ds-logo{
+    padding:0 14px 14px;
+    display:flex;align-items:center;gap:8px;
+    border-bottom:1px solid #eee;
+    margin-bottom:10px;
+}
+.ds-logo-icon{
+    width:28px;height:28px;border-radius:6px;
+    display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:11px;color:white;
+}
+.ds-logo span{font-weight:700;font-size:11px;color:#333;letter-spacing:.02em}
+.ds-section{
+    font-size:9px;font-weight:600;color:#aaa;
+    letter-spacing:.12em;text-transform:uppercase;
+    padding:10px 14px 4px;
+}
+.ds-item{
+    padding:6px 14px;font-size:11px;font-weight:500;color:#666;
+    display:flex;align-items:center;gap:8px;
+    border-radius:0;transition:background .15s;cursor:default;
+}
+.ds-item.on{background:#e8f0fc;color:#2563b8;font-weight:600}
+.ds-item .ds-badge{
+    margin-left:auto;
+    font-family:var(--mono);font-size:9px;font-weight:600;
+    background:#dbeafe;color:#2563b8;
+    padding:1px 7px;border-radius:10px;
+}
+
+/* Main content */
+.dash-main{flex:1;padding:16px 20px;display:flex;flex-direction:column;gap:12px;background:#f5f6f8}
+.d-topbar{display:flex;align-items:center;justify-content:space-between}
+.d-topbar h4{font-size:14px;font-weight:700;color:#1a1a1f}
+.d-topbar-r{font-size:11px;color:#999}
+
+/* 6-col pipeline */
+.d-pipeline{flex:1;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.d-col{display:flex;flex-direction:column;gap:6px}
+.d-col-h{
+    display:flex;align-items:center;gap:6px;
+    font-size:9px;font-weight:700;color:#555;
+    text-transform:uppercase;letter-spacing:.08em;
+    margin-bottom:2px;
+}
+.d-col-h i{width:7px;height:7px;border-radius:50%;display:block}
+.d-col-h .col-count{
+    margin-left:auto;
+    font-family:var(--mono);font-size:9px;font-weight:600;
+    background:#eee;color:#777;padding:1px 6px;border-radius:8px;
+}
+
+/* RFP Cards — white, with location/date/win% like the real UI */
+.d-card{
+    background:white;
+    border:1px solid #e5e5ea;
+    border-radius:8px;
+    padding:9px 10px;
+    font-size:10px;color:#333;
+    line-height:1.35;
+    box-shadow:0 1px 3px rgba(0,0,0,0.04);
+}
+.d-card-title{font-weight:700;font-size:10px;color:#1a1a1f;margin-bottom:4px;line-height:1.3}
+.d-card-meta{font-size:8.5px;color:#999;display:flex;align-items:center;gap:3px;margin-top:2px}
+.d-card-meta svg{width:8px;height:8px;stroke:#bbb;fill:none;stroke-width:2}
+.d-card-win{
+    display:inline-block;
+    font-family:var(--mono);font-size:9px;font-weight:700;
+    padding:2px 7px;border-radius:4px;margin-top:5px;
+}
+.win-high{background:#dcfce7;color:#16a34a}
+.win-mid{background:#fef3c7;color:#d97706}
+.win-low{background:#fee2e2;color:#dc2626}
+.d-card-empty{
+    color:#bbb;font-size:10px;font-style:italic;
+    padding:20px 0;text-align:center;
+}
+
+/* Chat button */
+.d-chat{
+    position:absolute;bottom:14px;right:14px;
+    width:36px;height:36px;border-radius:50%;
+    background:#2563b8;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 2px 8px rgba(37,99,184,0.3);
+}
+.d-chat svg{width:16px;height:16px;fill:white;stroke:none}
+
+/* small dashboard */
+.dash-sm .dash-body{min-height:260px}
+.dash-sm .dash-side{width:120px}
+.dash-sm .d-pipeline{grid-template-columns:repeat(4,1fr)}
+.dash-sm .ds-logo{padding:0 10px 12px}
+.dash-sm .ds-item{padding:5px 10px;font-size:10px}
+
+/* ── Alt view: Analytics / Stats view ── */
+.d-analytics{flex:1;display:flex;flex-direction:column;gap:10px}
+.d-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.d-stat-box{background:white;border:1px solid #e5e5ea;border-radius:8px;padding:12px 10px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.d-stat-box b{font-family:var(--mono);font-size:20px;font-weight:700;display:block;line-height:1.1}
+.d-stat-box small{font-size:8px;color:#999;text-transform:uppercase;letter-spacing:.08em;display:block;margin-top:3px}
+.d-chart{background:white;border:1px solid #e5e5ea;border-radius:8px;padding:12px;flex:1;display:flex;flex-direction:column;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.d-chart-title{font-size:10px;font-weight:700;color:#333;margin-bottom:8px}
+.d-chart-bars{flex:1;display:flex;align-items:flex-end;gap:6px;padding-top:4px}
+.d-chart-bar{flex:1;border-radius:3px 3px 0 0;min-height:8px;transition:height .3s}
+.d-chart-labels{display:flex;gap:6px;margin-top:4px}
+.d-chart-labels span{flex:1;text-align:center;font-size:7px;color:#aaa}
+
+/* ── Alt view: Table/List view ── */
+.d-table{flex:1;display:flex;flex-direction:column;gap:0}
+.d-table-head{display:grid;grid-template-columns:2fr 1fr 1fr 60px;gap:8px;padding:6px 10px;font-size:8px;font-weight:700;color:#999;text-transform:uppercase;letter-spacing:.08em;border-bottom:2px solid #e5e5ea}
+.d-table-row{display:grid;grid-template-columns:2fr 1fr 1fr 60px;gap:8px;padding:8px 10px;font-size:9.5px;color:#333;border-bottom:1px solid #f0f0f0;align-items:center}
+.d-table-row:hover{background:#f8f9fb}
+.d-table-row .d-card-win{margin:0;font-size:8px;padding:1px 6px}
+.d-status{font-size:8px;font-weight:600;padding:2px 6px;border-radius:3px;text-align:center}
+
+/* ── DASHBOARD SHOWCASE GRID ── */
+.showcase-section{padding:0 24px 20px}
+.showcase-row{
+    max-width:1080px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+}
+.showcase-item .dash{transition:transform .35s ease,box-shadow .35s ease}
+.showcase-item .dash:hover{transform:translateY(-4px);box-shadow:0 50px 140px rgba(0,0,0,0.7),0 0 0 0.5px rgba(255,255,255,0.08) inset}
+.s-label{
+    display:flex;align-items:center;gap:8px;
+    margin-top:12px;padding:0 2px;
+}
+.s-dot{width:7px;height:7px;border-radius:50%}
+.s-name{font-size:13px;font-weight:600}
+.s-type{font-family:var(--mono);font-size:11px;color:var(--gray-4);margin-left:auto}
+
+/* ── VALUE SECTION (full-bleed tiles) ── */
+.val-tile{
+    padding:100px 24px;
+    text-align:center;
+    display:flex;flex-direction:column;align-items:center;
+}
+.val-tile+.val-tile{margin-top:12px}
+.val-num{
+    font-family:var(--mono);
+    font-size:clamp(56px,10vw,96px);
+    font-weight:700;
+    letter-spacing:-0.04em;
+    line-height:1;
+    color:var(--white);
+}
+.val-tile h3{
+    font-size:clamp(24px,3.5vw,32px);
+    font-weight:600;
+    letter-spacing:-0.025em;
+    margin-top:12px;
+    max-width:500px;
+}
+.val-tile p{
+    font-size:17px;
+    color:var(--gray-4);
+    max-width:440px;
+    margin-top:10px;
+    line-height:1.5;
+}
+
+/* ── FEATURES ── */
+.feat-section{
+    padding:100px 24px 120px;
+    max-width:800px;margin:0 auto;
+}
+.feat-section .tile-label{text-align:left;margin-bottom:40px}
+.feat-item{
+    display:grid;
+    grid-template-columns:36px 1fr;
+    gap:0 20px;
+    padding:28px 0;
+    border-bottom:1px solid #222225;
+    align-items:first baseline;
+}
+.feat-item:first-child{border-top:1px solid #222225}
+.feat-n{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--gray-4)}
+.feat-item h3{font-size:17px;font-weight:600;margin-bottom:4px}
+.feat-item p{font-size:15px;color:var(--gray-4);line-height:1.5;grid-column:2}
+
+/* ── TESTIMONIALS ── */
+.test-section{
+    padding:100px 24px;
+    text-align:center;
+    display:flex;flex-direction:column;align-items:center;
+}
+.test-section .tile-label{margin-bottom:48px}
+.test-main-q{
+    font-size:clamp(24px,3.5vw,36px);
+    font-weight:600;
+    letter-spacing:-0.03em;
+    line-height:1.3;
+    max-width:720px;
+    margin-bottom:28px;
+    position:relative;
+}
+.test-main-q::before{
+    content:'\201C';
+    display:block;
+    font-size:80px;
+    line-height:1;
+    color:var(--blue);
+    opacity:0.4;
+    margin-bottom:-8px;
+}
+.t-author{display:flex;align-items:center;gap:12px;justify-content:center}
+.t-av{
+    width:40px;height:40px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:13px;font-weight:600;color:black;
+}
+.t-info{text-align:left}
+.t-name{font-size:14px;font-weight:600}
+.t-role{font-size:12px;color:var(--gray-4)}
+.test-cards{
+    display:grid;grid-template-columns:1fr 1fr;gap:14px;
+    max-width:760px;width:100%;
+    margin-top:56px;text-align:left;
+}
+.t-card{
+    background:var(--gray-1);
+    border-radius:14px;
+    padding:32px;
+    transition:transform .3s;
+}
+.t-card:hover{transform:translateY(-2px)}
+.t-card blockquote{
+    font-size:15px;color:var(--gray-5);
+    line-height:1.55;margin-bottom:24px;
+    font-style:normal;
+}
+
+/* ── PRICING ── */
+.pricing-section{padding:100px 24px;text-align:center}
+.pricing-section .tile-label{margin-bottom:8px}
+.pricing-section>h2{
+    font-size:clamp(40px,6vw,56px);
+    font-weight:700;letter-spacing:-0.04em;line-height:1.08;
+    margin-bottom:8px;
+}
+.pricing-section>.sub{
+    font-size:19px;color:var(--gray-4);margin-bottom:56px;
+}
+.pricing-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+    max-width:960px;margin:0 auto;
+    text-align:left;align-items:start;
+}
+.p-card{
+    background:var(--gray-1);
+    border-radius:18px;
+    padding:36px 28px;
+    position:relative;
+    transition:transform .3s;
+}
+.p-card:hover{transform:translateY(-2px)}
+.p-card.pop{
+    border:2px solid var(--blue);
+    box-shadow:0 0 80px rgba(41,151,255,0.08);
+}
+.p-badge{
+    position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+    font-family:var(--mono);font-size:10px;font-weight:600;
+    letter-spacing:.08em;text-transform:uppercase;
+    background:var(--blue);color:white;
+    padding:5px 16px;border-radius:980px;white-space:nowrap;
+}
+.p-tier{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
+.p-name{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin-bottom:14px}
+.p-price{display:flex;align-items:baseline;gap:4px;margin-bottom:10px}
+.p-amt{font-family:var(--mono);font-size:40px;font-weight:700;letter-spacing:-0.03em}
+.p-per{font-size:15px;color:var(--gray-4)}
+.p-desc{font-size:14px;color:var(--gray-4);line-height:1.5;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #2a2a2e}
+.p-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.p-list li{
+    font-size:14px;color:var(--gray-5);line-height:1.4;
+    padding-left:22px;position:relative;
+}
+.p-list li::before{
+    content:'';position:absolute;left:0;top:5px;
+    width:10px;height:10px;border-radius:50%;
+    background:rgba(41,151,255,0.2);border:1.5px solid var(--blue);
+}
+.p-card .btn-fill,.p-card .btn-outline{width:100%;justify-content:center;font-size:15px;padding:11px 24px}
+
+/* ── FINAL CTA ── */
+.final-cta{
+    padding:120px 24px;
+    text-align:center;
+    display:flex;flex-direction:column;align-items:center;
+}
+.final-cta h2{
+    font-size:clamp(36px,6vw,64px);
+    font-weight:800;letter-spacing:-0.04em;line-height:1.05;
+    max-width:700px;margin-bottom:16px;
+}
+.final-cta h2 em{font-style:normal;color:var(--blue)}
+.final-cta p{font-size:19px;color:var(--gray-4);margin-bottom:32px}
+
+/* ── FOOTER ── */
+.footer{
+    border-top:1px solid #222225;
+    padding:24px 0;
+}
+.footer-inner{
+    max-width:1024px;margin:0 auto;padding:0 22px;
+    display:flex;align-items:center;justify-content:space-between;
+}
+.f-logo{font-size:15px;font-weight:800;letter-spacing:.04em}
+.f-logo span{color:var(--blue)}
+.f-links{display:flex;gap:24px;list-style:none}
+.f-links a{font-size:12px;color:var(--gray-4);transition:color .2s}
+.f-links a:hover{color:var(--gray-5)}
+.f-copy{font-size:12px;color:var(--gray-4)}
+
+/* ── REVEAL ── */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.reveal.vis{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+    .showcase-row{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+    .pricing-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}
+    .p-card.pop{order:-1}
+    .test-cards{grid-template-columns:1fr}
+    .nav-links a:not(.nav-cta){display:none}
+}
+@media(max-width:600px){
+    .dash-body{flex-direction:column}
+    .dash-side{flex-direction:row;width:100%;border-right:none;border-bottom:1px solid #eee;padding:8px 12px;gap:2px;overflow-x:auto;flex-wrap:nowrap}
+    .dash-side .ds-section,.dash-side .ds-logo{display:none}
+    .dash-side .ds-item{white-space:nowrap;padding:4px 10px;font-size:10px}
+    .d-pipeline{grid-template-columns:repeat(2,1fr)!important}
+    .dash-sm .dash-body{min-height:auto}
+    .val-tile{padding:72px 24px}
+    .feat-item{grid-template-columns:1fr}
+    .feat-n{margin-bottom:4px}
+    .feat-item p{grid-column:1}
+    .footer-inner{flex-direction:column;gap:12px;text-align:center}
+    .hero-ctas{flex-direction:column;width:100%}
+    .hero-ctas a,.hero-ctas button{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">OSAL<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#showcase">Product</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Proposals in hours.<br><em>Not&nbsp;months.</em></h1>
+    <p class="hero-sub">Your own AI-powered command center for government contracts. Custom-built for your firm, running on&nbsp;your&nbsp;hardware.</p>
+    <div class="hero-ctas">
+        <a href="#pricing" class="btn-fill">Build My Hub &#8594;</a>
+        <a href="#showcase" class="btn-outline">See It In Action &#8595;</a>
+    </div>
+
+    <!-- HERO DASHBOARD — matches real Alares Hub UI -->
+    <div class="dash-wrap">
+        <div class="dash">
+            <div class="dash-chrome">
+                <div class="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+                <span class="dash-title">localhost:8080</span>
+            </div>
+            <div class="dash-body">
+                <div class="dash-side">
+                    <div class="ds-logo">
+                        <div class="ds-logo-icon" style="background:linear-gradient(135deg,#c0392b,#2563b8)">A</div>
+                        <span>ALARES</span>
+                    </div>
+                    <div class="ds-section">Workflow</div>
+                    <div class="ds-item on">
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="#2563b8" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                        RFP Pipeline <span class="ds-badge">19</span>
+                    </div>
+                    <div class="ds-item">
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="#999" fill="none" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        Proposals
+                    </div>
+                    <div class="ds-section">Data</div>
+                    <div class="ds-item">
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="#999" fill="none" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 00-8 0v2"/></svg>
+                        Projects
+                    </div>
+                    <div class="ds-item">
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="#999" fill="none" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                        Personnel
+                    </div>
+                    <div class="ds-item">
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="#999" fill="none" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+                        Subconsultants
+                    </div>
+                    <div class="ds-item">
+                        <svg viewBox="0 0 24 24" width="12" height="12" stroke="#999" fill="none" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Evaluations
+                    </div>
+                </div>
+                <div class="dash-main" style="position:relative">
+                    <div class="d-topbar">
+                        <h4>RFP Pipeline</h4>
+                        <span class="d-topbar-r">Alares Engineering</span>
+                    </div>
+                    <div class="d-pipeline">
+                        <!-- ANALYZED -->
+                        <div class="d-col">
+                            <span class="d-col-h"><i style="background:#2563b8"></i>Analyzed<span class="col-count">16</span></span>
+                            <div class="d-card">
+                                <div class="d-card-title">Z2DA-- 657-22-112JC, Phase1: Prepare Site For&nbsp;New&nbsp;...</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>John Cochran VA Medical Center, Saint Louis,&nbsp;MO</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Due: 2026-03-23</div>
+                                <span class="d-card-win win-high">82%</span>
+                            </div>
+                            <div class="d-card">
+                                <div class="d-card-title">Y1DA--589A6-26-448, ADD LIGHTNING PROTECTION TO&nbsp;HO...</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Leavenworth, KS</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Due: 2026-03-26</div>
+                                <span class="d-card-win win-mid">41%</span>
+                            </div>
+                            <div class="d-card">
+                                <div class="d-card-title">S112--CON-NRM 663-21-100 UPGRADE EXTERNAL SECURIT...</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Seattle, WA</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Due: 2026-03-26</div>
+                                <span class="d-card-win win-mid">57%</span>
+                            </div>
+                        </div>
+                        <!-- DECLINED -->
+                        <div class="d-col">
+                            <span class="d-col-h"><i style="background:#f59e0b"></i>Declined<span class="col-count">3</span></span>
+                            <div class="d-card">
+                                <div class="d-card-title">Correct FCA D &amp; F Deficiencies Boiler&nbsp;Plant.</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lyons, NJ</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Due: 2026-04-09</div>
+                                <span class="d-card-win win-mid">46%</span>
+                            </div>
+                            <div class="d-card">
+                                <div class="d-card-title">Air Filter Replacement Service for the Phoenix&nbsp;Rea...</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Phoenix, AZ</div>
+                                <div class="d-card-meta"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Due: 2026-04-10</div>
+                                <span class="d-card-win win-low">39%</span>
+                            </div>
+                        </div>
+                        <!-- CRAFTING PROPOSAL -->
+                        <div class="d-col">
+                            <span class="d-col-h"><i style="background:#f97316"></i>Crafting Prop.<span class="col-count">0</span></span>
+                            <div class="d-card-empty">No items</div>
+                        </div>
+                        <!-- SUBMITTED -->
+                        <div class="d-col">
+                            <span class="d-col-h"><i style="background:#3b82f6"></i>Submitted<span class="col-count">0</span></span>
+                            <div class="d-card-empty">No items</div>
+                        </div>
+                        <!-- REJECTED -->
+                        <div class="d-col">
+                            <span class="d-col-h"><i style="background:#ef4444"></i>Rejected<span class="col-count">0</span></span>
+                            <div class="d-card-empty">No items</div>
+                        </div>
+                        <!-- ACCEPTED -->
+                        <div class="d-col">
+                            <span class="d-col-h"><i style="background:#22c55e"></i>Accepted<span class="col-count">0</span></span>
+                            <div class="d-card-empty">No items</div>
+                        </div>
+                    </div>
+                    <!-- Chat bubble -->
+                    <div class="d-chat"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DASHBOARD SHOWCASE -->
+<section class="showcase-section" style="background:var(--gray-1);padding-top:80px;padding-bottom:60px">
+    <div style="max-width:1080px;margin:0 auto;text-align:center;padding:0 24px 48px">
+        <span class="tile-label reveal">Built for your firm</span>
+        <h2 style="font-size:clamp(40px,6vw,56px);font-weight:700;letter-spacing:-0.04em;line-height:1.08;margin-top:8px" class="reveal">Every hub is <em>different.</em></h2>
+        <p class="sub reveal" style="margin:16px auto 0">Your NAICS codes. Your team. Your past performance.<br>No&nbsp;templates, no&nbsp;one-size-fits-all.</p>
+    </div>
+    <div class="showcase-row">
+        <!-- Meridian — ANALYTICS VIEW (stats + bar chart, not kanban) -->
+        <div class="showcase-item reveal">
+            <div class="dash dash-sm">
+                <div class="dash-chrome"><div class="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><span class="dash-title">Meridian Command</span></div>
+                <div class="dash-body">
+                    <div class="dash-side">
+                        <div class="ds-logo"><div class="ds-logo-icon" style="background:#0d9488">M</div><span>MERIDIAN</span></div>
+                        <div class="ds-section">Workflow</div>
+                        <div class="ds-item">Pipeline</div>
+                        <div class="ds-item">Proposals</div>
+                        <div class="ds-section">Analytics</div>
+                        <div class="ds-item on"><svg viewBox="0 0 24 24" width="10" height="10" stroke="#0d9488" fill="none" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Win Rates</div>
+                        <div class="ds-item">Reports</div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="d-topbar"><h4>Win Rate Analytics</h4><span class="d-topbar-r">Q1 2026</span></div>
+                        <div class="d-analytics">
+                            <div class="d-stat-row">
+                                <div class="d-stat-box"><b style="color:#0d9488">41%</b><small>Win Rate</small></div>
+                                <div class="d-stat-box"><b style="color:#333">$6.8M</b><small>Pipeline Value</small></div>
+                                <div class="d-stat-box"><b style="color:#22c55e">14</b><small>Won This Year</small></div>
+                            </div>
+                            <div class="d-chart">
+                                <div class="d-chart-title">Win Rate by Month</div>
+                                <div class="d-chart-bars">
+                                    <div class="d-chart-bar" style="height:55%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:38%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:62%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:45%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:70%;background:#0d9488"></div>
+                                    <div class="d-chart-bar" style="height:50%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:58%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:41%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:75%;background:#0d9488"></div>
+                                    <div class="d-chart-bar" style="height:48%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:65%;background:#d1fae5"></div>
+                                    <div class="d-chart-bar" style="height:82%;background:#0d9488"></div>
+                                </div>
+                                <div class="d-chart-labels"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-label"><div class="s-dot" style="background:var(--teal)"></div><span class="s-name">Meridian Engineering</span><span class="s-type">Civil Engineering</span></div>
+        </div>
+
+        <!-- Apex — TABLE/LIST VIEW (spreadsheet style, not kanban) -->
+        <div class="showcase-item reveal">
+            <div class="dash dash-sm">
+                <div class="dash-chrome"><div class="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><span class="dash-title">Apex Command Center</span></div>
+                <div class="dash-body">
+                    <div class="dash-side">
+                        <div class="ds-logo"><div class="ds-logo-icon" style="background:#b91c1c">A</div><span>APEX DEF.</span></div>
+                        <div class="ds-section">Workflow</div>
+                        <div class="ds-item on"><svg viewBox="0 0 24 24" width="10" height="10" stroke="#b91c1c" fill="none" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>All Contracts <span class="ds-badge" style="background:#fee2e2;color:#b91c1c">29</span></div>
+                        <div class="ds-item">Proposals</div>
+                        <div class="ds-section">Intel</div>
+                        <div class="ds-item">Threats</div>
+                        <div class="ds-item">Clearances</div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="d-topbar"><h4>Active Contracts</h4><span class="d-topbar-r">29 tracked</span></div>
+                        <div class="d-table">
+                            <div class="d-table-head"><span>Contract</span><span>Location</span><span>Status</span><span>Win %</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">DoD Cyber Audit FY27</span><span>Arlington, VA</span><span class="d-status" style="background:#fee2e2;color:#b91c1c">Intel</span><span class="d-card-win win-mid">44%</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">Navy Base Infra Mod</span><span>San Diego, CA</span><span class="d-status" style="background:#fee2e2;color:#b91c1c">Intel</span><span class="d-card-win win-low">28%</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">SOCOM Logistics Spt</span><span>Tampa, FL</span><span class="d-status" style="background:#dbeafe;color:#2563eb">Capture</span><span class="d-card-win win-mid">52%</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">AF Base Security Sys</span><span>Colorado Spgs, CO</span><span class="d-status" style="background:#fef3c7;color:#d97706">Submitted</span><span class="d-card-win win-mid">61%</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">CISA Threat Assess.</span><span>Washington, DC</span><span class="d-status" style="background:#dcfce7;color:#16a34a">Awarded</span><span class="d-card-win win-high">92%</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">DARPA Research Spt</span><span>McLean, VA</span><span class="d-status" style="background:#fee2e2;color:#b91c1c">Intel</span><span class="d-card-win win-low">19%</span></div>
+                            <div class="d-table-row"><span style="font-weight:600">DIA Analysis Support</span><span>Bolling AFB, DC</span><span class="d-status" style="background:#dbeafe;color:#2563eb">Capture</span><span class="d-card-win win-mid">47%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-label"><div class="s-dot" style="background:var(--red)"></div><span class="s-name">Apex Defense Solutions</span><span class="s-type">Defense Contractor</span></div>
+        </div>
+
+        <!-- Greenfield — KANBAN VIEW (but with different columns/terminology) -->
+        <div class="showcase-item reveal">
+            <div class="dash dash-sm">
+                <div class="dash-chrome"><div class="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div><span class="dash-title">Greenfield Portal</span></div>
+                <div class="dash-body">
+                    <div class="dash-side">
+                        <div class="ds-logo"><div class="ds-logo-icon" style="background:#16a34a">G</div><span>GREENFIELD</span></div>
+                        <div class="ds-section">Projects</div>
+                        <div class="ds-item on"><svg viewBox="0 0 24 24" width="10" height="10" stroke="#16a34a" fill="none" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Board <span class="ds-badge" style="background:#dcfce7;color:#16a34a">21</span></div>
+                        <div class="ds-item">Site Maps</div>
+                        <div class="ds-section">Field</div>
+                        <div class="ds-item">Inspections</div>
+                        <div class="ds-item">Lab Results</div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="d-topbar"><h4>Project Board</h4><span class="d-topbar-r">Greenfield Environmental</span></div>
+                        <div class="d-pipeline">
+                            <div class="d-col"><span class="d-col-h"><i style="background:#16a34a"></i>Scoping<span class="col-count">10</span></span><div class="d-card"><div class="d-card-title">EPA Remediation Phase II</div><div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Newark, NJ</div><span class="d-card-win win-high">73%</span></div><div class="d-card"><div class="d-card-title">USDA Forest Assessment</div><div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Missoula, MT</div><span class="d-card-win win-mid">51%</span></div></div>
+                            <div class="d-col"><span class="d-col-h"><i style="background:#3b82f6"></i>Drafting<span class="col-count">6</span></span><div class="d-card"><div class="d-card-title">BLM Land Survey NV-024</div><div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Reno, NV</div><span class="d-card-win win-mid">58%</span></div></div>
+                            <div class="d-col"><span class="d-col-h"><i style="background:#f59e0b"></i>Review<span class="col-count">5</span></span><div class="d-card"><div class="d-card-title">DOE Cleanup Phase 3</div><div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Hanford, WA</div><span class="d-card-win win-mid">45%</span></div></div>
+                            <div class="d-col"><span class="d-col-h"><i style="background:#22c55e"></i>Awarded<span class="col-count">5</span></span><div class="d-card"><div class="d-card-title">NPS Wetland Study</div><div class="d-card-meta"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Everglades, FL</div><span class="d-card-win win-high">91%</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-label"><div class="s-dot" style="background:var(--green)"></div><span class="s-name">Greenfield Environmental</span><span class="s-type">Environmental</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- VALUE TILES -->
+<section class="val-tile tile-dark reveal" style="margin-top:12px">
+    <div class="val-num" data-target="40" data-suffix="+">0</div>
+    <h3>Hours per proposal, on&nbsp;average.</h3>
+    <p>Your best people buried in paperwork. Formatting resumes, chasing subconsultant data, assembling SF330s. Every&nbsp;single&nbsp;time.</p>
+</section>
+<section class="val-tile tile-black reveal">
+    <div class="val-num" data-target="3" data-suffix="x">0</div>
+    <h3>Faster turnaround with&nbsp;OSAL.</h3>
+    <p>What used to take weeks now takes hours. More submissions. More at-bats. More&nbsp;wins.</p>
+</section>
+<section class="val-tile tile-dark reveal">
+    <div class="val-num" data-target="100" data-suffix="%">0</div>
+    <h3>Your data stays on your&nbsp;server.</h3>
+    <p>Hosted on your hardware, behind your firewall. No third-party processing, no vendor&nbsp;lock&#8209;in.</p>
+</section>
+
+<!-- FEATURES -->
+<section class="feat-section" id="features">
+    <span class="tile-label reveal">Capabilities</span>
+    <div class="feat-item reveal"><span class="feat-n">01</span><h3>SAM.gov Scanning</h3><p>Automatic opportunity discovery filtered to your exact NAICS codes. New postings surface the day they&nbsp;drop.</p></div>
+    <div class="feat-item reveal"><span class="feat-n">02</span><h3>AI Proposal Drafting</h3><p>SF330s and technical proposals generated from your firm's past performance, personnel data, and writing&nbsp;style.</p></div>
+    <div class="feat-item reveal"><span class="feat-n">03</span><h3>Gap Analysis</h3><p>See which roles you staff in-house and where you need subcontractors. Preferred, unknown,&nbsp;avoid.</p></div>
+    <div class="feat-item reveal"><span class="feat-n">04</span><h3>Pipeline Management</h3><p>Drag-and-drop opportunities from first look through award. Your entire funnel at a&nbsp;glance.</p></div>
+    <div class="feat-item reveal"><span class="feat-n">05</span><h3>Win Rate Analytics</h3><p>Know your probability of winning before you invest the time. Data-driven go/no-go&nbsp;decisions.</p></div>
+    <div class="feat-item reveal"><span class="feat-n">06</span><h3>Local &amp; Secure</h3><p>Runs on your own hardware. No cloud dependency, no data&nbsp;leaving&nbsp;your&nbsp;building.</p></div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="test-section" style="background:var(--gray-1)">
+    <span class="tile-label reveal">What our clients say</span>
+    <div class="reveal">
+        <p class="test-main-q">We used to spend three weeks on a single SF330. With OSAL, we draft proposals in two days. We've submitted forty percent more this quarter&nbsp;&mdash; and our win rate&nbsp;is&nbsp;up.</p>
+        <div class="t-author">
+            <div class="t-av" style="background:var(--teal)">SC</div>
+            <div class="t-info"><div class="t-name">Sarah Chen</div><div class="t-role">Director of BD, Meridian&nbsp;Engineering</div></div>
+        </div>
+    </div>
+    <div class="test-cards">
+        <div class="t-card reveal">
+            <blockquote>The pipeline visibility alone was worth it. We finally see which opportunities are worth pursuing before we commit resources. OSAL paid for itself in the first&nbsp;month.</blockquote>
+            <div class="t-author"><div class="t-av" style="background:var(--red)">MW</div><div class="t-info"><div class="t-name">Marcus Webb</div><div class="t-role">CEO, Apex Defense&nbsp;Solutions</div></div></div>
+        </div>
+        <div class="t-card reveal">
+            <blockquote>Having everything on our own server was non-negotiable. OSAL gave us enterprise-grade AI without sending a byte to the cloud. Our team actually enjoys proposals&nbsp;now.</blockquote>
+            <div class="t-author"><div class="t-av" style="background:var(--green)">DR</div><div class="t-info"><div class="t-name">Diana Reeves</div><div class="t-role">VP of Ops, Greenfield&nbsp;Environmental</div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+    <span class="tile-label reveal">Pricing</span>
+    <h2 class="reveal">One contract pays for <em>years</em>&nbsp;of&nbsp;OSAL.</h2>
+    <p class="sub reveal">Choose the tier that fits your&nbsp;firm.</p>
+    <div class="pricing-grid">
+        <div class="p-card reveal">
+            <div class="p-tier">Scout</div>
+            <div class="p-name">Opportunity Scanner</div>
+            <div class="p-price"><span class="p-amt">$497</span><span class="p-per">/mo</span></div>
+            <p class="p-desc">Automated SAM.gov monitoring and a custom pipeline dashboard for your&nbsp;firm.</p>
+            <ul class="p-list"><li>SAM.gov opportunity scanning</li><li>NAICS code filtering</li><li>Custom pipeline dashboard</li><li>Up to 50 opportunities/mo</li><li>Your branding &amp; colors</li><li>Email support</li></ul>
+            <a href="#contact" class="btn-outline">Get Started</a>
+        </div>
+        <div class="p-card pop reveal">
+            <div class="p-badge">Most Popular</div>
+            <div class="p-tier">Command</div>
+            <div class="p-name">Full Proposal Engine</div>
+            <div class="p-price"><span class="p-amt">$997</span><span class="p-per">/mo</span></div>
+            <p class="p-desc">Everything in Scout plus AI proposal generation, gap analysis, and team&nbsp;analytics.</p>
+            <ul class="p-list"><li>Everything in Scout</li><li>AI proposal &amp; SF330 drafting</li><li>Gap analysis &amp; team matching</li><li>Subcontractor management</li><li>Win rate analytics</li><li>Unlimited opportunities</li><li>Priority support</li></ul>
+            <a href="#contact" class="btn-fill">Build My Hub &#8594;</a>
+        </div>
+        <div class="p-card reveal">
+            <div class="p-tier">Enterprise</div>
+            <div class="p-name">Full Command Center</div>
+            <div class="p-price"><span class="p-amt">$2,497</span><span class="p-per">/mo</span></div>
+            <p class="p-desc">Multi-user access, custom integrations, and white-glove deployment on your&nbsp;infrastructure.</p>
+            <ul class="p-list"><li>Everything in Command</li><li>Multi-user access &amp; roles</li><li>Custom integrations &amp; API</li><li>Custom AI model training</li><li>On-premise deployment support</li><li>Dedicated success manager</li></ul>
+            <a href="#contact" class="btn-outline">Contact Sales</a>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="contact">
+    <h2>Your competitor just submitted <em>a&nbsp;proposal.</em></h2>
+    <p>Every day without OSAL is a contract you didn't&nbsp;win.</p>
+    <a href="mailto:hello@osalintel.com" class="btn-fill" style="font-size:19px;padding:14px 36px">Build My Hub &#8594;</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <span class="f-logo">OSAL<span>.</span></span>
+        <ul class="f-links"><li><a href="#showcase">Product</a></li><li><a href="#features">Features</a></li><li><a href="#pricing">Pricing</a></li><li><a href="mailto:hello@osalintel.com">Contact</a></li></ul>
+        <span class="f-copy">&copy; 2026 OSAL</span>
+    </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('vis');io.unobserve(x.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver(e=>{e.forEach(x=>{if(!x.isIntersecting)return;const el=x.target,t=+el.dataset.target,s=el.dataset.suffix||'',t0=performance.now(),dur=1400;!function tick(n){const p=Math.min((n-t0)/dur,1),ease=1-Math.pow(1-p,3);el.textContent=Math.round(ease*t)+s;if(p<1)requestAnimationFrame(tick)}(t0);cio.unobserve(x.target)})},{threshold:.5});
+document.querySelectorAll('[data-target]').forEach(el=>cio.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
+</script>
+</body>
+</html>
