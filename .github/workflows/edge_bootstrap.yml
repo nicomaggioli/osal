@@ -12,39 +12,46 @@ permissions:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           ref: edge-research-20260811
           fetch-depth: 1
-      - name: Fetch selected continuous public history
+      - name: Fetch compact continuous public history sample
         run: |
           rm -rf /tmp/btpred-data
           GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --sparse https://github.com/Shad0wSeven/btpred-data.git /tmp/btpred-data
           cd /tmp/btpred-data
           git sparse-checkout set spot_1s kalshi_ticks
           git checkout main
-          git lfs pull --include='spot_1s/BTCFDUSD-1s-2026-07-27.zip,spot_1s/BTCFDUSD-1s-2026-07-28.zip,spot_1s/BTCFDUSD-1s-2026-07-29.zip,kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz,kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz,kalshi_ticks/KXBTC15M-trades-2026-07-27.csv.gz'
-      - name: Inspect schemas
+          git lfs pull --include='spot_1s/BTCFDUSD-1s-2026-07-27.zip,kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz,kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz'
+      - name: Inspect compact schemas
         shell: bash
         run: |
           mkdir -p edge_outputs
-          {
-            echo '=== MARKET METADATA ==='
-            gzip -cd /tmp/btpred-data/kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz | head -n 3
-            echo '=== DENSE KALSHI 1S ==='
-            gzip -cd /tmp/btpred-data/kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz | head -n 3
-            echo '=== RAW KALSHI TRADES ==='
-            gzip -cd /tmp/btpred-data/kalshi_ticks/KXBTC15M-trades-2026-07-27.csv.gz | head -n 3
-            echo '=== BINANCE SPOT 1S ==='
-            unzip -p /tmp/btpred-data/spot_1s/BTCFDUSD-1s-2026-07-27.zip | head -n 3
-          } > edge_outputs/historical_schema.txt
-          cat edge_outputs/historical_schema.txt
-      - name: Commit schema output
+          python3 - <<'PY' > edge_outputs/historical_schema_compact.txt
+          import gzip, zipfile
+          paths = [
+              ('MARKET METADATA', '/tmp/btpred-data/kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz', 'gz'),
+              ('DENSE KALSHI 1S', '/tmp/btpred-data/kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz', 'gz'),
+              ('BINANCE SPOT 1S', '/tmp/btpred-data/spot_1s/BTCFDUSD-1s-2026-07-27.zip', 'zip'),
+          ]
+          for title, path, kind in paths:
+              print('===', title, '===')
+              if kind == 'gz':
+                  with gzip.open(path, 'rt', encoding='utf-8') as f:
+                      for _ in range(3): print(f.readline().rstrip())
+              else:
+                  with zipfile.ZipFile(path) as z:
+                      with z.open(z.namelist()[0]) as raw:
+                          for _ in range(3): print(raw.readline().decode().rstrip())
+          PY
+          cat edge_outputs/historical_schema_compact.txt
+      - name: Commit compact schema output
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/historical_schema.txt
-          git diff --cached --quiet || git commit -m 'EDGE continuous-history schema inspection [skip ci]'
+          git add edge_outputs/historical_schema_compact.txt
+          git diff --cached --quiet || git commit -m 'EDGE compact continuous-history schema inspection [skip ci]'
           git push origin HEAD:edge-research-20260811
