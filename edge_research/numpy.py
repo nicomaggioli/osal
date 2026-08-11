@@ -25,6 +25,10 @@ def array(values, dtype=None):
     return Array(float(x) for x in values)
 
 
+def asarray(values, dtype=None):
+    return array(values, dtype=dtype)
+
+
 def mean(values):
     vals = [float(x) for x in values]
     return sum(vals) / len(vals) if vals else float("nan")
