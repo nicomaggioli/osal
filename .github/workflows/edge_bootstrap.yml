@@ -25,21 +25,21 @@ jobs:
           cd /tmp/btpred-data
           git sparse-checkout set kalshi_15m_live kalshi_perp
           git checkout main
-      - name: Run expanded settlement-average variance research
+      - name: Run adversarial development verifier
         shell: bash
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/explore_brownian_v2.py > edge_outputs/brownian_average_v2.log 2>&1
+          python3 edge_research/dev_verify_brownian.py > edge_outputs/brownian_dev_verifier.log 2>&1
           code=$?
-          printf '{"brownian_average_v2_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/brownian_average_v2_status.json
-          cat edge_outputs/brownian_average_v2.log
+          printf '{"brownian_dev_verifier_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/brownian_dev_verifier_status.json
+          cat edge_outputs/brownian_dev_verifier.log
           exit 0
-      - name: Commit research output and diagnostics
+      - name: Commit verifier output and diagnostics
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/brownian_average_v2_status.json edge_outputs/brownian_average_v2.log
-          test ! -f edge_outputs/brownian_average_v2.json || git add edge_outputs/brownian_average_v2.json
-          git diff --cached --quiet || git commit -m 'EDGE expanded settlement-average variance diagnostics [skip ci]'
+          git add edge_outputs/brownian_dev_verifier_status.json edge_outputs/brownian_dev_verifier.log
+          test ! -f edge_outputs/brownian_dev_verifier.json || git add edge_outputs/brownian_dev_verifier.json
+          git diff --cached --quiet || git commit -m 'EDGE adversarial development verifier [skip ci]'
           git push origin HEAD:edge-research-20260811
