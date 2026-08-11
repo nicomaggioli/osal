@@ -1,0 +1,43 @@
+{
+  "after_strongest_3h_block_mean": 4.812503168316832,
+  "after_top10_mean": 2.5673700884955752,
+  "annualized": 203688.7045380531,
+  "chronological_thirds": [
+    5.287597368421053,
+    5.071947894736842,
+    7.113786486486487
+  ],
+  "fixed_3h_block_means": [
+    1.6240583333333325,
+    5.8616666666666655,
+    14.234166666666667,
+    3.3366666666666664,
+    6.760334999999999,
+    4.596666666666667,
+    2.586670833333334,
+    8.115,
+    4.759170833333333
+  ],
+  "fixed_3h_lcb95": 120056.98075831076,
+  "losses": 3,
+  "mean_per_scheduled_slot": 5.813033805309734,
+  "model": {
+    "sigma_multiplier": 0.75,
+    "sigma_window": 60
+  },
+  "params": {
+    "edge_min": 0.05,
+    "latency_ms": 2000,
+    "max_ask": 0.95,
+    "max_seconds_to_close": 600,
+    "min_seconds_to_close": 45,
+    "p_min": 0.85
+  },
+  "parsed_records": 50,
+  "scheduled_slots": 113,
+  "top1_positive_share": 0.0436785547609847,
+  "top5_positive_share": 0.2045859978558311,
+  "total_pnl": 656.8728199999999,
+  "trades": 46,
+  "wins": 43
+}
