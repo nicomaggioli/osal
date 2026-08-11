@@ -1,4 +1,4 @@
-name: EDGE research
+name: EDGE scheduled-denominator research
 
 on:
   push:
@@ -12,35 +12,49 @@ permissions:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
           ref: edge-research-20260811
           fetch-depth: 1
-      - name: Fetch July 26-28 continuous public history
+
+      - name: Fetch immutable historical KXBTC15M and BRTI captures
+        shell: bash
         run: |
+          set -euo pipefail
           rm -rf /tmp/btpred-data
           GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --sparse https://github.com/Shad0wSeven/btpred-data.git /tmp/btpred-data
           cd /tmp/btpred-data
-          git sparse-checkout set spot_1s kalshi_ticks
+          git sparse-checkout set kalshi_15m_live kalshi_perp
           git checkout main
-          git lfs pull --include='spot_1s/BTCFDUSD-1s-2026-07-26.zip,spot_1s/BTCFDUSD-1s-2026-07-27.zip,spot_1s/BTCFDUSD-1s-2026-07-28.zip,kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz,kalshi_ticks/KXBTC15M-1s-2026-07-28.csv.gz,kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz'
-      - name: Run fast causal probe
+          git lfs pull --include='kalshi_15m_live/*.jsonl.gz,kalshi_perp/*.jsonl.gz'
+          find kalshi_15m_live kalshi_perp -maxdepth 1 -type f -name '*.jsonl.gz' -printf '%p %s\n' | sort > /tmp/edge_capture_manifest.txt
+          sha256sum kalshi_15m_live/*.jsonl.gz kalshi_perp/*.jsonl.gz | sort > /tmp/edge_capture_sha256.txt
+
+      - name: Run corrected scheduled-slot optimization
         shell: bash
+        env:
+          BTPRED_ROOT: /tmp/btpred-data
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/continuous_spot_basis_probe.py > edge_outputs/continuous_spot_basis_probe.log 2>&1
+          python3 edge_research/optimize_scheduled_brownian.py > edge_outputs/scheduled_brownian_optimization.log 2>&1
           code=$?
-          printf '{"continuous_spot_basis_probe_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/continuous_spot_basis_probe_status.json
-          cat edge_outputs/continuous_spot_basis_probe.log
+          cp /tmp/edge_capture_manifest.txt edge_outputs/scheduled_brownian_capture_manifest.txt
+          cp /tmp/edge_capture_sha256.txt edge_outputs/scheduled_brownian_capture_sha256.txt
+          printf '{"scheduled_brownian_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/scheduled_brownian_optimization_status.json
+          cat edge_outputs/scheduled_brownian_optimization.log
           exit 0
-      - name: Commit probe output
+
+      - name: Commit development output
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/continuous_spot_basis_probe_status.json edge_outputs/continuous_spot_basis_probe.log
-          test ! -f edge_outputs/continuous_spot_basis_probe.json || git add edge_outputs/continuous_spot_basis_probe.json
-          git diff --cached --quiet || git commit -m 'EDGE continuous spot-basis causal probe output [skip ci]'
+          git add edge_outputs/scheduled_brownian_optimization_status.json \
+                  edge_outputs/scheduled_brownian_optimization.log \
+                  edge_outputs/scheduled_brownian_capture_manifest.txt \
+                  edge_outputs/scheduled_brownian_capture_sha256.txt
+          test ! -f edge_outputs/scheduled_brownian_optimization.json || git add edge_outputs/scheduled_brownian_optimization.json
+          git diff --cached --quiet || git commit -m 'EDGE scheduled-denominator optimization output [skip ci]'
           git push origin HEAD:edge-research-20260811
