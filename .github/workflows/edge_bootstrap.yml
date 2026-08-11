@@ -1,4 +1,4 @@
-name: EDGE persistent-liquidity research
+name: EDGE Brownian mechanism audit
 
 on:
   push:
@@ -29,32 +29,29 @@ jobs:
           git sparse-checkout set kalshi_15m_live kalshi_perp
           git checkout main
           git lfs pull --include='kalshi_15m_live/*.jsonl.gz,kalshi_perp/*.jsonl.gz'
-          find kalshi_15m_live kalshi_perp -maxdepth 1 -type f -name '*.jsonl.gz' -printf '%p %s\n' | sort > /tmp/edge_capture_manifest.txt
           sha256sum kalshi_15m_live/*.jsonl.gz kalshi_perp/*.jsonl.gz | sort > /tmp/edge_capture_sha256.txt
 
-      - name: Run persistent-liquidity scheduled optimization
+      - name: Run causal persistence and stability audit
         shell: bash
         env:
           BTPRED_ROOT: /tmp/btpred-data
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/optimize_scheduled_brownian_v3.py > edge_outputs/scheduled_brownian_v3.log 2>&1
+          python3 edge_research/audit_brownian_v3_features.py > edge_outputs/brownian_v3_feature_audit.log 2>&1
           code=$?
-          cp /tmp/edge_capture_manifest.txt edge_outputs/scheduled_brownian_v3_capture_manifest.txt
-          cp /tmp/edge_capture_sha256.txt edge_outputs/scheduled_brownian_v3_capture_sha256.txt
-          printf '{"scheduled_brownian_v3_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/scheduled_brownian_v3_status.json
-          cat edge_outputs/scheduled_brownian_v3.log
+          cp /tmp/edge_capture_sha256.txt edge_outputs/brownian_v3_feature_audit_capture_sha256.txt
+          printf '{"brownian_v3_feature_audit_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/brownian_v3_feature_audit_status.json
+          cat edge_outputs/brownian_v3_feature_audit.log
           exit 0
 
-      - name: Commit development output
+      - name: Commit development audit output
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/scheduled_brownian_v3_status.json \
-                  edge_outputs/scheduled_brownian_v3.log \
-                  edge_outputs/scheduled_brownian_v3_capture_manifest.txt \
-                  edge_outputs/scheduled_brownian_v3_capture_sha256.txt
-          test ! -f edge_outputs/scheduled_brownian_v3.json || git add edge_outputs/scheduled_brownian_v3.json
-          git diff --cached --quiet || git commit -m 'EDGE persistent-liquidity v3 output [skip ci]'
+          git add edge_outputs/brownian_v3_feature_audit_status.json \
+                  edge_outputs/brownian_v3_feature_audit.log \
+                  edge_outputs/brownian_v3_feature_audit_capture_sha256.txt
+          test ! -f edge_outputs/brownian_v3_feature_audit.json || git add edge_outputs/brownian_v3_feature_audit.json
+          git diff --cached --quiet || git commit -m 'EDGE Brownian v3 feature audit output [skip ci]'
           git push origin HEAD:edge-research-20260811
