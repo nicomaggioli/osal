@@ -26,12 +26,12 @@ jobs:
           git sparse-checkout set spot_1s kalshi_ticks
           git checkout main
           git lfs pull --include='spot_1s/BTCFDUSD-1s-2026-07-26.zip,spot_1s/BTCFDUSD-1s-2026-07-27.zip,spot_1s/BTCFDUSD-1s-2026-07-28.zip,kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz,kalshi_ticks/KXBTC15M-1s-2026-07-28.csv.gz,kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz'
-      - name: Run continuous development search
+      - name: Run efficient continuous development search
         shell: bash
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/continuous_spot_basis_dev.py > edge_outputs/continuous_spot_basis_dev.log 2>&1
+          python3 edge_research/continuous_spot_basis_fast.py > edge_outputs/continuous_spot_basis_dev.log 2>&1
           code=$?
           printf '{"continuous_spot_basis_dev_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/continuous_spot_basis_dev_status.json
           cat edge_outputs/continuous_spot_basis_dev.log
