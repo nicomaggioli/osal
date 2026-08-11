@@ -1,0 +1,112 @@
+{
+  "params": {
+    "latency_ms": 2000,
+    "min_seconds_to_close": 45,
+    "max_seconds_to_close": 600,
+    "p_min": 0.75,
+    "edge_min": 0.02,
+    "max_ask": 0.9
+  },
+  "markets": 50,
+  "trades": 37,
+  "wins": 34,
+  "losses": 3,
+  "partial_or_failed": 0,
+  "failed_after_signal": 5,
+  "total_pnl": 611.12745,
+  "mean_per_market": 12.222548999999999,
+  "annualized": 428278.11695999996,
+  "annual_lcb95": 317763.9827061329,
+  "capture_means": [
+    18.88,
+    24.45,
+    11.774555555555557,
+    -0.3359999999999985,
+    16.147142857142857,
+    8.393333333333333,
+    4.113290000000001,
+    12.542857142857143,
+    22.85,
+    18.175
+  ],
+  "third_means": [
+    12.99829411764706,
+    7.1621411764705885,
+    16.775003125
+  ],
+  "after_top10_mean": 8.548349,
+  "after_strongest_capture_mean": 11.583661627906977,
+  "model": {
+    "sigma_window": 120,
+    "sigma_multiplier": 0.75
+  },
+  "early_block": {
+    "params": {
+      "latency_ms": 2000,
+      "min_seconds_to_close": 45,
+      "max_seconds_to_close": 600,
+      "p_min": 0.75,
+      "edge_min": 0.02,
+      "max_ask": 0.9
+    },
+    "markets": 32,
+    "trades": 23,
+    "wins": 21,
+    "losses": 2,
+    "partial_or_failed": 0,
+    "failed_after_signal": 3,
+    "total_pnl": 384.361,
+    "mean_per_market": 12.01128125,
+    "annualized": 420875.29500000004,
+    "annual_lcb95": 213241.5824566306,
+    "capture_means": [
+      18.88,
+      24.45,
+      11.774555555555557,
+      -0.3359999999999985,
+      16.147142857142857,
+      8.393333333333333
+    ],
+    "third_means": [
+      12.990090909090908,
+      12.47,
+      10.43
+    ],
+    "after_top10_mean": 7.49846875,
+    "after_strongest_capture_mean": 10.853240000000001
+  },
+  "late_block": {
+    "params": {
+      "latency_ms": 2000,
+      "min_seconds_to_close": 45,
+      "max_seconds_to_close": 600,
+      "p_min": 0.75,
+      "edge_min": 0.02,
+      "max_ask": 0.9
+    },
+    "markets": 18,
+    "trades": 14,
+    "wins": 13,
+    "losses": 1,
+    "partial_or_failed": 0,
+    "failed_after_signal": 2,
+    "total_pnl": 226.76645000000002,
+    "mean_per_market": 12.598136111111112,
+    "annualized": 441438.6893333334,
+    "annual_lcb95": 172943.35584780524,
+    "capture_means": [
+      4.113290000000001,
+      12.542857142857143,
+      22.85,
+      18.175
+    ],
+    "third_means": [
+      5.146075000000001,
+      12.915,
+      19.733333333333334
+    ],
+    "after_top10_mean": 8.559247222222222,
+    "after_strongest_capture_mean": 12.633313636363637
+  },
+  "minimum_block_lcb95": 172943.35584780524
+}
