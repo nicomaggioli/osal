@@ -1,0 +1,3566 @@
+{
+  "best": {
+    "after_strongest_capture_mean": 1.145714285714286,
+    "after_top10_mean": 0.4644444444444446,
+    "annual_lcb95": -42506.2897479789,
+    "annualized": 74537.86666666665,
+    "capture_means": [
+      3.8640000000000008,
+      -2.2671428571428573,
+      6.295000000000001,
+      5.5625
+    ],
+    "entries": 18,
+    "fully_locked": 14,
+    "gross_max": 100.0,
+    "markets": 18,
+    "mean_per_market": 2.127222222222222,
+    "orphaned": 4,
+    "params": {
+      "earliest_s": 0,
+      "entry_cap": 0.4,
+      "latency_ms": 500,
+      "latest_before_close_s": 300,
+      "lock_margin": 0.08,
+      "slip": 0.0
+    },
+    "records": [
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "first_avg": 0.37,
+        "first_execution_ns": 1785589490335685000,
+        "first_fee": 0.82,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785589489326174000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785589200000,
+        "pnl": 10.85,
+        "second_avg": 0.38,
+        "second_execution_ns": 1785589570742743000,
+        "second_fee": 0.83,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785589569675185000,
+        "ticker": "KXBTC15M-26AUG010915-15",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "first_avg": 0.4,
+        "first_execution_ns": 1785591138038950000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785591137038952000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785591000000,
+        "pnl": 15.48,
+        "second_avg": 0.26,
+        "second_execution_ns": 1785591532372946000,
+        "second_fee": 0.68,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785591531382545000,
+        "ticker": "KXBTC15M-26AUG010945-45",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "first_avg": 0.25,
+        "first_execution_ns": 1785591998606944000,
+        "first_fee": 0.66,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785591997581495000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785591900000,
+        "pnl": 5.5000000000000036,
+        "second_avg": 0.61,
+        "second_execution_ns": 1785592035437392000,
+        "second_fee": 0.84,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785592034223046000,
+        "ticker": "KXBTC15M-26AUG011000-00",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "first_avg": 0.35,
+        "first_execution_ns": 1785593832232033000,
+        "first_fee": 0.8,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785593831287241000,
+        "gross": 50.0,
+        "locked": false,
+        "open_ms": 1785593700000,
+        "pnl": -18.3,
+        "second_avg": null,
+        "second_execution_ns": null,
+        "second_fee": 0.0,
+        "second_qty": 0.0,
+        "second_signal_ns": null,
+        "ticker": "KXBTC15M-26AUG011030-30",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "first_avg": 0.4,
+        "first_execution_ns": 1785594664987369000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785594664002958000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785594600000,
+        "pnl": 5.79,
+        "second_avg": 0.45,
+        "second_execution_ns": 1785594705451112000,
+        "second_fee": 0.87,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785594704460688000,
+        "ticker": "KXBTC15M-26AUG011045-45",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.37,
+        "first_execution_ns": 1785597361809919000,
+        "first_fee": 0.82,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785597360747028000,
+        "gross": 50.0,
+        "locked": false,
+        "open_ms": 1785597300000,
+        "pnl": -19.32,
+        "second_avg": null,
+        "second_execution_ns": null,
+        "second_fee": 0.0,
+        "second_qty": 0.0,
+        "second_signal_ns": null,
+        "ticker": "KXBTC15M-26AUG011130-30",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.37,
+        "first_execution_ns": 1785598543546377000,
+        "first_fee": 0.82,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785598542504892000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785598200000,
+        "pnl": 13.4,
+        "second_avg": 0.33,
+        "second_execution_ns": 1785598827530043000,
+        "second_fee": 0.78,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785598826075159000,
+        "ticker": "KXBTC15M-26AUG011145-45",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.29,
+        "first_execution_ns": 1785599382729142000,
+        "first_fee": 0.73,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785599381604450000,
+        "gross": 50.0,
+        "locked": false,
+        "open_ms": 1785599100000,
+        "pnl": -15.229999999999999,
+        "second_avg": null,
+        "second_execution_ns": null,
+        "second_fee": 0.0,
+        "second_qty": 0.0,
+        "second_signal_ns": null,
+        "ticker": "KXBTC15M-26AUG011200-00",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.39,
+        "first_execution_ns": 1785600019153166000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785600018193382000,
+        "gross": 50.0,
+        "locked": false,
+        "open_ms": 1785600000000,
+        "pnl": -20.34,
+        "second_avg": null,
+        "second_execution_ns": null,
+        "second_fee": 0.0,
+        "second_qty": 0.0,
+        "second_signal_ns": null,
+        "ticker": "KXBTC15M-26AUG011215-15",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.4,
+        "first_execution_ns": 1785600962818692000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785600961817795000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785600900000,
+        "pnl": 14.45,
+        "second_avg": 0.28,
+        "second_execution_ns": 1785601030155797000,
+        "second_fee": 0.71,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785601029043556000,
+        "ticker": "KXBTC15M-26AUG011230-30",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.4,
+        "first_execution_ns": 1785602825233690000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785602824251362000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785602700000,
+        "pnl": 5.79,
+        "second_avg": 0.45,
+        "second_execution_ns": 1785602974194723000,
+        "second_fee": 0.87,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785602973380860000,
+        "ticker": "KXBTC15M-26AUG011300-00",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "first_avg": 0.31,
+        "first_execution_ns": 1785604520032765000,
+        "first_fee": 0.75,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785604519052683000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785604500000,
+        "pnl": 5.379999999999996,
+        "second_avg": 0.55,
+        "second_execution_ns": 1785604574388235000,
+        "second_fee": 0.87,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785604573496465000,
+        "ticker": "KXBTC15M-26AUG011330-30",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+        "first_avg": 0.4,
+        "first_execution_ns": 1785648639571699000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785648638517541000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785648600000,
+        "pnl": 5.29,
+        "second_avg": 0.46,
+        "second_execution_ns": 1785648707338014000,
+        "second_fee": 0.87,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785648706338376000,
+        "ticker": "KXBTC15M-26AUG020145-45",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+        "first_avg": 0.38,
+        "first_execution_ns": 1785652205946411000,
+        "first_fee": 0.83,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785652204876046000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785652200000,
+        "pnl": 7.300000000000002,
+        "second_avg": 0.44,
+        "second_execution_ns": 1785652265346969000,
+        "second_fee": 0.87,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785652264399001000,
+        "ticker": "KXBTC15M-26AUG020245-45",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "first_avg": 0.33,
+        "first_execution_ns": 1785658629411191000,
+        "first_fee": 0.78,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785658628397583000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785658500000,
+        "pnl": 6.339999999999999,
+        "second_avg": 0.51,
+        "second_execution_ns": 1785658752945124000,
+        "second_fee": 0.88,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785658751859485000,
+        "ticker": "KXBTC15M-26AUG020430-30",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "first_avg": 0.35,
+        "first_execution_ns": 1785661224287442000,
+        "first_fee": 0.8,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785661223468339000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785661200000,
+        "pnl": 5.819999999999999,
+        "second_avg": 0.5,
+        "second_execution_ns": 1785661306298381000,
+        "second_fee": 0.88,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785661305461996000,
+        "ticker": "KXBTC15M-26AUG020515-15",
+        "win": false
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "first_avg": 0.36,
+        "first_execution_ns": 1785662226182743000,
+        "first_fee": 0.81,
+        "first_qty": 50.0,
+        "first_side": "no",
+        "first_signal_ns": 1785662225027481000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785662100000,
+        "pnl": 5.310000000000001,
+        "second_avg": 0.5,
+        "second_execution_ns": 1785662305031318000,
+        "second_fee": 0.88,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785662304150108000,
+        "ticker": "KXBTC15M-26AUG020530-30",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "first_avg": 0.4,
+        "first_execution_ns": 1785665736026202000,
+        "first_fee": 0.84,
+        "first_qty": 50.0,
+        "first_side": "yes",
+        "first_signal_ns": 1785665735073647000,
+        "gross": 100.0,
+        "locked": true,
+        "open_ms": 1785665700000,
+        "pnl": 4.78,
+        "second_avg": 0.47,
+        "second_execution_ns": 1785665761049833000,
+        "second_fee": 0.88,
+        "second_qty": 50.0,
+        "second_signal_ns": 1785665760001445000,
+        "ticker": "KXBTC15M-26AUG020630-30",
+        "win": false
+      }
+    ],
+    "third_means": [
+      4.440892098500626e-16,
+      0.5749999999999996,
+      5.8066666666666675
+    ],
+    "total_pnl": 38.29
+  },
+  "grid_size": 12288,
+  "opened_captures": [
+    "KXBTC15M-20260731T190212Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T195913Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T204522Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T234548Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T024606Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T054633Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T084650Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T073326Z-10800s.jsonl.gz"
+  ],
+  "round": "temporal complement acquisition v1",
+  "top20_by_entries": [
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.576176944444444,
+      "annual_lcb95": -69286.02570021489,
+      "annualized": 80599.17346666663,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.300204722222221,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 41.40368499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.576176944444444,
+      "annual_lcb95": -69286.02570021489,
+      "annualized": 80599.17346666663,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.300204722222221,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 41.40368499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.2543703571428564,
+      "after_top10_mean": 0.4795102777777773,
+      "annual_lcb95": -75285.41985160235,
+      "annualized": 77211.97346666665,
+      "capture_means": [
+        1.6516019999999991,
+        -1.9224035714285725,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.203538055555555,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 39.66368499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.2543703571428564,
+      "after_top10_mean": 0.4795102777777773,
+      "annual_lcb95": -75285.41985160235,
+      "annualized": 77211.97346666665,
+      "capture_means": [
+        1.6516019999999991,
+        -1.9224035714285725,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.203538055555555,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 39.66368499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.5217324999999993,
+      "annual_lcb95": -63294.258743211365,
+      "annualized": 74929.50679999996,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.1383991666666655,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 180,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        6.991666666666666
+      ],
+      "total_pnl": 38.49118499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.5217324999999993,
+      "annual_lcb95": -63294.258743211365,
+      "annualized": 74929.50679999996,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.1383991666666655,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 180,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        6.991666666666666
+      ],
+      "total_pnl": 38.49118499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    }
+  ],
+  "top20_by_total_pnl": [
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.576176944444444,
+      "annual_lcb95": -69286.02570021489,
+      "annualized": 80599.17346666663,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.300204722222221,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 41.40368499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.576176944444444,
+      "annual_lcb95": -69286.02570021489,
+      "annualized": 80599.17346666663,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.300204722222221,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 41.40368499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.2543703571428564,
+      "after_top10_mean": 0.4795102777777773,
+      "annual_lcb95": -75285.41985160235,
+      "annualized": 77211.97346666665,
+      "capture_means": [
+        1.6516019999999991,
+        -1.9224035714285725,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.203538055555555,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 39.66368499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.2543703571428564,
+      "after_top10_mean": 0.4795102777777773,
+      "annual_lcb95": -75285.41985160235,
+      "annualized": 77211.97346666665,
+      "capture_means": [
+        1.6516019999999991,
+        -1.9224035714285725,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 18,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.203538055555555,
+      "orphaned": 11,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -1.1811375000000013,
+        7.477083333333333
+      ],
+      "total_pnl": 39.66368499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.5217324999999993,
+      "annual_lcb95": -63294.258743211365,
+      "annualized": 74929.50679999996,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.1383991666666655,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 180,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        6.991666666666666
+      ],
+      "total_pnl": 38.49118499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.37865607142857066,
+      "after_top10_mean": 0.5217324999999993,
+      "annual_lcb95": -63294.258743211365,
+      "annualized": 74929.50679999996,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6738321428571439,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.1383991666666655,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 180,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.1811375000000013,
+        6.991666666666666
+      ],
+      "total_pnl": 38.49118499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.3672482142857135,
+      "after_top10_mean": 0.5128597222222214,
+      "annual_lcb95": -63853.524709702884,
+      "annualized": 74618.60466666664,
+      "capture_means": [
+        1.6516019999999991,
+        -1.6966478571428583,
+        4.380000000000001,
+        8.2975
+      ],
+      "entries": 18,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.129526388888888,
+      "orphaned": 12,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -1.2077558333333347,
+        6.991666666666666
+      ],
+      "total_pnl": 38.33147499999998
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 0.133083928571428,
+      "after_top10_mean": 0.3851763888888886,
+      "annual_lcb95": -79574.69721910606,
+      "annualized": 73906.51399999998,
+      "capture_means": [
+        0.2599999999999996,
+        -1.170975000000001,
+        4.380000000000001,
+        9.025625
+      ],
+      "entries": 15,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.1092041666666663,
+      "orphaned": 9,
+      "params": {
+        "earliest_s": 300,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.15,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        -0.5944708333333345,
+        7.477083333333333
+      ],
+      "total_pnl": 37.96567499999999
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    },
+    {
+      "after_strongest_capture_mean": 1.072857142857143,
+      "after_top10_mean": 0.4077777777777778,
+      "annual_lcb95": -46683.842469798044,
+      "annualized": 72552.26666666668,
+      "capture_means": [
+        3.8640000000000008,
+        -2.4128571428571433,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.070555555555556,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.3383333333333331,
+        0.7433333333333328,
+        5.8066666666666675
+      ],
+      "total_pnl": 37.27
+    }
+  ],
+  "top50": [
+    {
+      "after_strongest_capture_mean": 0.03321499999999977,
+      "after_top10_mean": -0.6036105555555559,
+      "annual_lcb95": -19080.704459767683,
+      "annualized": 17588.15279999998,
+      "capture_means": [
+        0.34399999999999975,
+        -0.3849985714285719,
+        0.7200000000000006,
+        2.1424999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.5019449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.0
+      },
+      "third_means": [
+        -0.6000000000000002,
+        0.4375016666666662,
+        1.6683333333333323
+      ],
+      "total_pnl": 9.03500999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.03321499999999977,
+      "after_top10_mean": -0.6036105555555559,
+      "annual_lcb95": -19080.704459767683,
+      "annualized": 17588.15279999998,
+      "capture_means": [
+        0.34399999999999975,
+        -0.3849985714285719,
+        0.7200000000000006,
+        2.1424999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.5019449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.6000000000000002,
+        0.4375016666666662,
+        1.6683333333333323
+      ],
+      "total_pnl": 9.03500999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.03321499999999977,
+      "after_top10_mean": -0.6036105555555559,
+      "annual_lcb95": -19080.704459767683,
+      "annualized": 17588.15279999998,
+      "capture_means": [
+        0.34399999999999975,
+        -0.3849985714285719,
+        0.7200000000000006,
+        2.1424999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.5019449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.6000000000000002,
+        0.4375016666666662,
+        1.6683333333333323
+      ],
+      "total_pnl": 9.03500999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.03321499999999977,
+      "after_top10_mean": -0.6036105555555559,
+      "annual_lcb95": -19080.704459767683,
+      "annualized": 17588.15279999998,
+      "capture_means": [
+        0.34399999999999975,
+        -0.3849985714285719,
+        0.7200000000000006,
+        2.1424999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.5019449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.0
+      },
+      "third_means": [
+        -0.6000000000000002,
+        0.4375016666666662,
+        1.6683333333333323
+      ],
+      "total_pnl": 9.03500999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.03321499999999977,
+      "after_top10_mean": -0.6036105555555559,
+      "annual_lcb95": -19080.704459767683,
+      "annualized": 17588.15279999998,
+      "capture_means": [
+        0.34399999999999975,
+        -0.3849985714285719,
+        0.7200000000000006,
+        2.1424999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.5019449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.6000000000000002,
+        0.4375016666666662,
+        1.6683333333333323
+      ],
+      "total_pnl": 9.03500999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.03321499999999977,
+      "after_top10_mean": -0.6036105555555559,
+      "annual_lcb95": -19080.704459767683,
+      "annualized": 17588.15279999998,
+      "capture_means": [
+        0.34399999999999975,
+        -0.3849985714285719,
+        0.7200000000000006,
+        2.1424999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.5019449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.6000000000000002,
+        0.4375016666666662,
+        1.6683333333333323
+      ],
+      "total_pnl": 9.03500999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.7566757142857133,
+      "after_top10_mean": -0.24425222222222315,
+      "annual_lcb95": -20782.74779385267,
+      "annualized": 40341.66879999996,
+      "capture_means": [
+        0.2599999999999996,
+        0.07620857142856963,
+        4.380000000000001,
+        2.532499999999999
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.1513033333333322,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        0.8605766666666645,
+        3.148333333333333
+      ],
+      "total_pnl": 20.72345999999998
+    },
+    {
+      "after_strongest_capture_mean": 0.7566757142857133,
+      "after_top10_mean": -0.24425222222222315,
+      "annual_lcb95": -20782.74779385267,
+      "annualized": 40341.66879999996,
+      "capture_means": [
+        0.2599999999999996,
+        0.07620857142856963,
+        4.380000000000001,
+        2.532499999999999
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.1513033333333322,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        0.8605766666666645,
+        3.148333333333333
+      ],
+      "total_pnl": 20.72345999999998
+    },
+    {
+      "after_strongest_capture_mean": 0.8679624999999989,
+      "after_top10_mean": 0.4995263888888877,
+      "annual_lcb95": -21141.556249431334,
+      "annualized": 68253.00466666663,
+      "capture_means": [
+        1.6516019999999991,
+        -0.6952192857142876,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.9478597222222211,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 35.06147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.8679624999999989,
+      "after_top10_mean": 0.4995263888888877,
+      "annual_lcb95": -21141.556249431334,
+      "annualized": 68253.00466666663,
+      "capture_means": [
+        1.6516019999999991,
+        -0.6952192857142876,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.9478597222222211,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 35.06147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.8679624999999989,
+      "after_top10_mean": 0.4995263888888877,
+      "annual_lcb95": -21141.556249431334,
+      "annualized": 68253.00466666663,
+      "capture_means": [
+        1.6516019999999991,
+        -0.6952192857142876,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.9478597222222211,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 35.06147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.8679624999999989,
+      "after_top10_mean": 0.4995263888888877,
+      "annual_lcb95": -21141.556249431334,
+      "annualized": 68253.00466666663,
+      "capture_means": [
+        1.6516019999999991,
+        -0.6952192857142876,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.9478597222222211,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.6046683333333326,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 35.06147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.44884615384615445,
+      "after_top10_mean": 0.3675000000000004,
+      "annual_lcb95": -25421.217719211516,
+      "annualized": 33782.35600000001,
+      "capture_means": [
+        2.3037899999999993,
+        -1.2899999999999996,
+        2.0400000000000027,
+        2.69625
+      ],
+      "entries": 18,
+      "fully_locked": 17,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.9641083333333336,
+      "orphaned": 1,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.0,
+        "slip": 0.0
+      },
+      "third_means": [
+        -1.3001750000000005,
+        1.7150000000000005,
+        2.477500000000001
+      ],
+      "total_pnl": 17.353950000000005
+    },
+    {
+      "after_strongest_capture_mean": 0.44884615384615445,
+      "after_top10_mean": 0.3675000000000004,
+      "annual_lcb95": -25421.217719211516,
+      "annualized": 33782.35600000001,
+      "capture_means": [
+        2.3037899999999993,
+        -1.2899999999999996,
+        2.0400000000000027,
+        2.69625
+      ],
+      "entries": 18,
+      "fully_locked": 17,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.9641083333333336,
+      "orphaned": 1,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.0,
+        "slip": 0.0
+      },
+      "third_means": [
+        -1.3001750000000005,
+        1.7150000000000005,
+        2.477500000000001
+      ],
+      "total_pnl": 17.353950000000005
+    },
+    {
+      "after_strongest_capture_mean": 0.44884615384615445,
+      "after_top10_mean": 0.3675000000000004,
+      "annual_lcb95": -25421.217719211516,
+      "annualized": 33782.35600000001,
+      "capture_means": [
+        2.3037899999999993,
+        -1.2899999999999996,
+        2.0400000000000027,
+        2.69625
+      ],
+      "entries": 18,
+      "fully_locked": 17,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.9641083333333336,
+      "orphaned": 1,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.0,
+        "slip": 0.0
+      },
+      "third_means": [
+        -1.3001750000000005,
+        1.7150000000000005,
+        2.477500000000001
+      ],
+      "total_pnl": 17.353950000000005
+    },
+    {
+      "after_strongest_capture_mean": 0.44884615384615445,
+      "after_top10_mean": 0.3675000000000004,
+      "annual_lcb95": -25421.217719211516,
+      "annualized": 33782.35600000001,
+      "capture_means": [
+        2.3037899999999993,
+        -1.2899999999999996,
+        2.0400000000000027,
+        2.69625
+      ],
+      "entries": 18,
+      "fully_locked": 17,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.9641083333333336,
+      "orphaned": 1,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 500,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.0,
+        "slip": 0.0
+      },
+      "third_means": [
+        -1.3001750000000005,
+        1.7150000000000005,
+        2.477500000000001
+      ],
+      "total_pnl": 17.353950000000005
+    },
+    {
+      "after_strongest_capture_mean": 0.6323899999999991,
+      "after_top10_mean": -0.3409188888888898,
+      "annual_lcb95": -25963.7571611738,
+      "annualized": 36954.468799999966,
+      "capture_means": [
+        0.2599999999999996,
+        -0.17236285714285898,
+        4.380000000000001,
+        2.532499999999999
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.0546366666666658,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.8450000000000003,
+        0.8605766666666645,
+        3.148333333333333
+      ],
+      "total_pnl": 18.983459999999983
+    },
+    {
+      "after_strongest_capture_mean": 0.6323899999999991,
+      "after_top10_mean": -0.3409188888888898,
+      "annual_lcb95": -25963.7571611738,
+      "annualized": 36954.468799999966,
+      "capture_means": [
+        0.2599999999999996,
+        -0.17236285714285898,
+        4.380000000000001,
+        2.532499999999999
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.0546366666666658,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.8450000000000003,
+        0.8605766666666645,
+        3.148333333333333
+      ],
+      "total_pnl": 18.983459999999983
+    },
+    {
+      "after_strongest_capture_mean": -0.2417850000000002,
+      "after_top10_mean": -0.8824994444444451,
+      "annual_lcb95": -27146.465168516785,
+      "annualized": 4448.152799999983,
+      "capture_means": [
+        0.34399999999999975,
+        -0.9349985714285719,
+        0.7200000000000006,
+        1.4174999999999984
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1269449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        -0.6000000000000002,
+        -0.20416500000000046,
+        1.1849999999999992
+      ],
+      "total_pnl": 2.285009999999991
+    },
+    {
+      "after_strongest_capture_mean": -0.2417850000000002,
+      "after_top10_mean": -0.8824994444444451,
+      "annual_lcb95": -27146.465168516785,
+      "annualized": 4448.152799999983,
+      "capture_means": [
+        0.34399999999999975,
+        -0.9349985714285719,
+        0.7200000000000006,
+        1.4174999999999984
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1269449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.6000000000000002,
+        -0.20416500000000046,
+        1.1849999999999992
+      ],
+      "total_pnl": 2.285009999999991
+    },
+    {
+      "after_strongest_capture_mean": -0.2417850000000002,
+      "after_top10_mean": -0.8824994444444451,
+      "annual_lcb95": -27146.465168516785,
+      "annualized": 4448.152799999983,
+      "capture_means": [
+        0.34399999999999975,
+        -0.9349985714285719,
+        0.7200000000000006,
+        1.4174999999999984
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1269449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.6000000000000002,
+        -0.20416500000000046,
+        1.1849999999999992
+      ],
+      "total_pnl": 2.285009999999991
+    },
+    {
+      "after_strongest_capture_mean": -0.2417850000000002,
+      "after_top10_mean": -0.8824994444444451,
+      "annual_lcb95": -27146.465168516785,
+      "annualized": 4448.152799999983,
+      "capture_means": [
+        0.34399999999999975,
+        -0.9349985714285719,
+        0.7200000000000006,
+        1.4174999999999984
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1269449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        -0.6000000000000002,
+        -0.20416500000000046,
+        1.1849999999999992
+      ],
+      "total_pnl": 2.285009999999991
+    },
+    {
+      "after_strongest_capture_mean": -0.2417850000000002,
+      "after_top10_mean": -0.8824994444444451,
+      "annual_lcb95": -27146.465168516785,
+      "annualized": 4448.152799999983,
+      "capture_means": [
+        0.34399999999999975,
+        -0.9349985714285719,
+        0.7200000000000006,
+        1.4174999999999984
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1269449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.6000000000000002,
+        -0.20416500000000046,
+        1.1849999999999992
+      ],
+      "total_pnl": 2.285009999999991
+    },
+    {
+      "after_strongest_capture_mean": -0.2417850000000002,
+      "after_top10_mean": -0.8824994444444451,
+      "annual_lcb95": -27146.465168516785,
+      "annualized": 4448.152799999983,
+      "capture_means": [
+        0.34399999999999975,
+        -0.9349985714285719,
+        0.7200000000000006,
+        1.4174999999999984
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1269449999999995,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 0,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.6000000000000002,
+        -0.20416500000000046,
+        1.1849999999999992
+      ],
+      "total_pnl": 2.285009999999991
+    },
+    {
+      "after_strongest_capture_mean": 0.7436767857142845,
+      "after_top10_mean": 0.402859722222221,
+      "annual_lcb95": -27486.183194545167,
+      "annualized": 64865.80466666662,
+      "capture_means": [
+        1.6516019999999991,
+        -0.9437907142857161,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.8511930555555542,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 33.32147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.7436767857142845,
+      "after_top10_mean": 0.402859722222221,
+      "annual_lcb95": -27486.183194545167,
+      "annualized": 64865.80466666662,
+      "capture_means": [
+        1.6516019999999991,
+        -0.9437907142857161,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.8511930555555542,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 33.32147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.7436767857142845,
+      "after_top10_mean": 0.402859722222221,
+      "annual_lcb95": -27486.183194545167,
+      "annualized": 64865.80466666662,
+      "capture_means": [
+        1.6516019999999991,
+        -0.9437907142857161,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.8511930555555542,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 33.32147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.7436767857142845,
+      "after_top10_mean": 0.402859722222221,
+      "annual_lcb95": -27486.183194545167,
+      "annualized": 64865.80466666662,
+      "capture_means": [
+        1.6516019999999991,
+        -0.9437907142857161,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.8511930555555542,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.3146683333333325,
+        -0.03942250000000221,
+        5.278333333333333
+      ],
+      "total_pnl": 33.32147499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.0479364285714274,
+      "after_top10_mean": -0.48049388888888994,
+      "annual_lcb95": -29943.791455748258,
+      "annualized": 21084.560799999956,
+      "capture_means": [
+        0.2599999999999996,
+        -0.039841428571430804,
+        -0.17499999999999938,
+        2.5399999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.6017283333333321,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        0.7251849999999974,
+        1.6349999999999991
+      ],
+      "total_pnl": 10.831109999999978
+    },
+    {
+      "after_strongest_capture_mean": 0.0479364285714274,
+      "after_top10_mean": -0.48049388888888994,
+      "annual_lcb95": -29943.791455748258,
+      "annualized": 21084.560799999956,
+      "capture_means": [
+        0.2599999999999996,
+        -0.039841428571430804,
+        -0.17499999999999938,
+        2.5399999999999983
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.6017283333333321,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        0.7251849999999974,
+        1.6349999999999991
+      ],
+      "total_pnl": 10.831109999999978
+    },
+    {
+      "after_strongest_capture_mean": 0.6223903571428562,
+      "after_top10_mean": 0.3085258333333323,
+      "annual_lcb95": -32735.332713602304,
+      "annualized": 61560.34519999997,
+      "capture_means": [
+        0.2599999999999996,
+        -0.19236214285714467,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 15,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.7568591666666658,
+      "orphaned": 8,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        0.5472441666666645,
+        5.278333333333333
+      ],
+      "total_pnl": 31.62346499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.6223903571428562,
+      "after_top10_mean": 0.3085258333333323,
+      "annual_lcb95": -32735.332713602304,
+      "annualized": 61560.34519999997,
+      "capture_means": [
+        0.2599999999999996,
+        -0.19236214285714467,
+        4.380000000000001,
+        5.727499999999999
+      ],
+      "entries": 15,
+      "fully_locked": 7,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.7568591666666658,
+      "orphaned": 8,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        0.5472441666666645,
+        5.278333333333333
+      ],
+      "total_pnl": 31.62346499999998
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": 0.6106692857142849,
+      "after_top10_mean": 0.2018113888888882,
+      "annual_lcb95": -33041.34268351103,
+      "annualized": 58249.33773333332,
+      "capture_means": [
+        1.592169999999999,
+        -1.198782857142858,
+        4.49,
+        5.34330875
+      ],
+      "entries": 18,
+      "fully_locked": 8,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.662366944444444,
+      "orphaned": 10,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        0.35180833333333245,
+        -0.42358000000000134,
+        5.0588725000000005
+      ],
+      "total_pnl": 29.92260499999999
+    },
+    {
+      "after_strongest_capture_mean": -0.4030700000000009,
+      "after_top10_mean": -0.9784847222222228,
+      "annual_lcb95": -34506.40252674231,
+      "annualized": 156.2297333333026,
+      "capture_means": [
+        0.18216999999999964,
+        -0.9176900000000016,
+        -0.06499999999999995,
+        1.4308087499999993
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.004458611111110233,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.8231916666666669,
+        -0.09563833333333527,
+        0.9322058333333328
+      ],
+      "total_pnl": 0.0802549999999842
+    },
+    {
+      "after_strongest_capture_mean": -0.4030700000000009,
+      "after_top10_mean": -0.9784847222222228,
+      "annual_lcb95": -34506.40252674231,
+      "annualized": 156.2297333333026,
+      "capture_means": [
+        0.18216999999999964,
+        -0.9176900000000016,
+        -0.06499999999999995,
+        1.4308087499999993
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.004458611111110233,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.8231916666666669,
+        -0.09563833333333527,
+        0.9322058333333328
+      ],
+      "total_pnl": 0.0802549999999842
+    },
+    {
+      "after_strongest_capture_mean": -0.4030700000000009,
+      "after_top10_mean": -0.9784847222222228,
+      "annual_lcb95": -34506.40252674231,
+      "annualized": 156.2297333333026,
+      "capture_means": [
+        0.18216999999999964,
+        -0.9176900000000016,
+        -0.06499999999999995,
+        1.4308087499999993
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.004458611111110233,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.8231916666666669,
+        -0.09563833333333527,
+        0.9322058333333328
+      ],
+      "total_pnl": 0.0802549999999842
+    },
+    {
+      "after_strongest_capture_mean": -0.4030700000000009,
+      "after_top10_mean": -0.9784847222222228,
+      "annual_lcb95": -34506.40252674231,
+      "annualized": 156.2297333333026,
+      "capture_means": [
+        0.18216999999999964,
+        -0.9176900000000016,
+        -0.06499999999999995,
+        1.4308087499999993
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.004458611111110233,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 1000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.8231916666666669,
+        -0.09563833333333527,
+        0.9322058333333328
+      ],
+      "total_pnl": 0.0802549999999842
+    },
+    {
+      "after_strongest_capture_mean": -0.30546714285714377,
+      "after_top10_mean": -0.8825855555555564,
+      "annual_lcb95": -35171.749487366294,
+      "annualized": 5807.802133333293,
+      "capture_means": [
+        0.2599999999999996,
+        -0.7466485714285732,
+        -0.17499999999999938,
+        1.8149999999999982
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1657477777777766,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.05,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        -0.09942333333333549,
+        1.1516666666666657
+      ],
+      "total_pnl": 2.983459999999979
+    },
+    {
+      "after_strongest_capture_mean": -0.30546714285714377,
+      "after_top10_mean": -0.8825855555555564,
+      "annual_lcb95": -35171.749487366294,
+      "annualized": 5807.802133333293,
+      "capture_means": [
+        0.2599999999999996,
+        -0.7466485714285732,
+        -0.17499999999999938,
+        1.8149999999999982
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.1657477777777766,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.05,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.5550000000000003,
+        -0.09942333333333549,
+        1.1516666666666657
+      ],
+      "total_pnl": 2.983459999999979
+    },
+    {
+      "after_strongest_capture_mean": 0.28220357142857105,
+      "after_top10_mean": -0.6420425000000003,
+      "annual_lcb95": -35666.39048755507,
+      "annualized": 24477.55213333332,
+      "capture_means": [
+        0.08416999999999959,
+        -0.6028571428571432,
+        3.8749999999999996,
+        2.1558087499999994
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.6985602777777774,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.9048583333333337,
+        0.2716666666666662,
+        2.7288724999999996
+      ],
+      "total_pnl": 12.574084999999993
+    },
+    {
+      "after_strongest_capture_mean": 0.28220357142857105,
+      "after_top10_mean": -0.6420425000000003,
+      "annual_lcb95": -35666.39048755507,
+      "annualized": 24477.55213333332,
+      "capture_means": [
+        0.08416999999999959,
+        -0.6028571428571432,
+        3.8749999999999996,
+        2.1558087499999994
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.6985602777777774,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.1,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.9048583333333337,
+        0.2716666666666662,
+        2.7288724999999996
+      ],
+      "total_pnl": 12.574084999999993
+    },
+    {
+      "after_strongest_capture_mean": 0.28220357142857105,
+      "after_top10_mean": -0.6420425000000003,
+      "annual_lcb95": -35666.39048755507,
+      "annualized": 24477.55213333332,
+      "capture_means": [
+        0.08416999999999959,
+        -0.6028571428571432,
+        3.8749999999999996,
+        2.1558087499999994
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.6985602777777774,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.01
+      },
+      "third_means": [
+        -0.9048583333333337,
+        0.2716666666666662,
+        2.7288724999999996
+      ],
+      "total_pnl": 12.574084999999993
+    },
+    {
+      "after_strongest_capture_mean": 0.28220357142857105,
+      "after_top10_mean": -0.6420425000000003,
+      "annual_lcb95": -35666.39048755507,
+      "annualized": 24477.55213333332,
+      "capture_means": [
+        0.08416999999999959,
+        -0.6028571428571432,
+        3.8749999999999996,
+        2.1558087499999994
+      ],
+      "entries": 13,
+      "fully_locked": 6,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 0.6985602777777774,
+      "orphaned": 7,
+      "params": {
+        "earliest_s": 60,
+        "entry_cap": 0.1,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.1,
+        "slip": 0.02
+      },
+      "third_means": [
+        -0.9048583333333337,
+        0.2716666666666662,
+        2.7288724999999996
+      ],
+      "total_pnl": 12.574084999999993
+    }
+  ],
+  "top50_robust": [
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 1.145714285714286,
+      "after_top10_mean": 0.4644444444444446,
+      "annual_lcb95": -42506.2897479789,
+      "annualized": 74537.86666666665,
+      "capture_means": [
+        3.8640000000000008,
+        -2.2671428571428573,
+        6.295000000000001,
+        5.5625
+      ],
+      "entries": 18,
+      "fully_locked": 14,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 2.127222222222222,
+      "orphaned": 4,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.4,
+        "latency_ms": 500,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.08,
+        "slip": 0.0
+      },
+      "third_means": [
+        4.440892098500626e-16,
+        0.5749999999999996,
+        5.8066666666666675
+      ],
+      "total_pnl": 38.29
+    },
+    {
+      "after_strongest_capture_mean": 0.07311153846153798,
+      "after_top10_mean": 0.25335833333333274,
+      "annual_lcb95": -50786.08246074559,
+      "annualized": 48336.609333333305,
+      "capture_means": [
+        4.775999999999999,
+        -1.3973285714285726,
+        4.275,
+        0.5454375000000005
+      ],
+      "entries": 18,
+      "fully_locked": 15,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.3794694444444437,
+      "orphaned": 3,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 2000,
+        "latest_before_close_s": 300,
+        "lock_margin": 0.05,
+        "slip": 0.0
+      },
+      "third_means": [
+        0.759999999999999,
+        1.589783333333332,
+        1.7886250000000004
+      ],
+      "total_pnl": 24.83044999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.07311153846153798,
+      "after_top10_mean": 0.25335833333333274,
+      "annual_lcb95": -50786.08246074559,
+      "annualized": 48336.609333333305,
+      "capture_means": [
+        4.775999999999999,
+        -1.3973285714285726,
+        4.275,
+        0.5454375000000005
+      ],
+      "entries": 18,
+      "fully_locked": 15,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.3794694444444437,
+      "orphaned": 3,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 2000,
+        "latest_before_close_s": 180,
+        "lock_margin": 0.05,
+        "slip": 0.0
+      },
+      "third_means": [
+        0.759999999999999,
+        1.589783333333332,
+        1.7886250000000004
+      ],
+      "total_pnl": 24.83044999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.07311153846153798,
+      "after_top10_mean": 0.25335833333333274,
+      "annual_lcb95": -50786.08246074559,
+      "annualized": 48336.609333333305,
+      "capture_means": [
+        4.775999999999999,
+        -1.3973285714285726,
+        4.275,
+        0.5454375000000005
+      ],
+      "entries": 18,
+      "fully_locked": 15,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.3794694444444437,
+      "orphaned": 3,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 2000,
+        "latest_before_close_s": 120,
+        "lock_margin": 0.05,
+        "slip": 0.0
+      },
+      "third_means": [
+        0.759999999999999,
+        1.589783333333332,
+        1.7886250000000004
+      ],
+      "total_pnl": 24.83044999999999
+    },
+    {
+      "after_strongest_capture_mean": 0.07311153846153798,
+      "after_top10_mean": 0.25335833333333274,
+      "annual_lcb95": -50786.08246074559,
+      "annualized": 48336.609333333305,
+      "capture_means": [
+        4.775999999999999,
+        -1.3973285714285726,
+        4.275,
+        0.5454375000000005
+      ],
+      "entries": 18,
+      "fully_locked": 15,
+      "gross_max": 100.0,
+      "markets": 18,
+      "mean_per_market": 1.3794694444444437,
+      "orphaned": 3,
+      "params": {
+        "earliest_s": 0,
+        "entry_cap": 0.45,
+        "latency_ms": 2000,
+        "latest_before_close_s": 60,
+        "lock_margin": 0.05,
+        "slip": 0.0
+      },
+      "third_means": [
+        0.759999999999999,
+        1.589783333333332,
+        1.7886250000000004
+      ],
+      "total_pnl": 24.83044999999999
+    }
+  ],
+  "train_markets": 32,
+  "untouched_after_development": [
+    "KXBTC15M-20260802T103339Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T133352Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T215854Z-10800s.jsonl.gz",
+    "KXBTC15M-20260803T141530Z-10800s.jsonl.gz",
+    "KXBTC15M-20260803T171548Z-10800s.jsonl.gz",
+    "KXBTC15M-20260809T213835Z-10800s.jsonl.gz",
+    "KXBTC15M-20260810T003855Z-10800s.jsonl.gz"
+  ],
+  "validation_markets": 18
+}

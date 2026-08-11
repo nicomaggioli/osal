@@ -1,0 +1,32 @@
+{
+  "params": {
+    "latency_ms": 500,
+    "entry_cap": 0.4,
+    "earliest_s": 0,
+    "latest_before_close_s": 300,
+    "lock_margin": 0.08,
+    "slip": 0.0
+  },
+  "markets": 18,
+  "entries": 18,
+  "fully_locked": 14,
+  "orphaned": 4,
+  "gross_max": 100.0,
+  "total_pnl": 38.29,
+  "mean_per_market": 2.127222222222222,
+  "annualized": 74537.86666666665,
+  "annual_lcb95": -42506.2897479789,
+  "capture_means": [
+    3.8640000000000008,
+    -2.2671428571428573,
+    6.295000000000001,
+    5.5625
+  ],
+  "third_means": [
+    4.440892098500626e-16,
+    0.5749999999999996,
+    5.8066666666666675
+  ],
+  "after_top10_mean": 0.4644444444444446,
+  "after_strongest_capture_mean": 1.145714285714286
+}
