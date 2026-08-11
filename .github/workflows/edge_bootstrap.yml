@@ -1,4 +1,4 @@
-name: EDGE scheduled-denominator research
+name: EDGE persistent-liquidity research
 
 on:
   push:
@@ -32,29 +32,29 @@ jobs:
           find kalshi_15m_live kalshi_perp -maxdepth 1 -type f -name '*.jsonl.gz' -printf '%p %s\n' | sort > /tmp/edge_capture_manifest.txt
           sha256sum kalshi_15m_live/*.jsonl.gz kalshi_perp/*.jsonl.gz | sort > /tmp/edge_capture_sha256.txt
 
-      - name: Run corrected scheduled-slot optimization
+      - name: Run persistent-liquidity scheduled optimization
         shell: bash
         env:
           BTPRED_ROOT: /tmp/btpred-data
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/optimize_scheduled_brownian.py > edge_outputs/scheduled_brownian_optimization.log 2>&1
+          python3 edge_research/optimize_scheduled_brownian_v3.py > edge_outputs/scheduled_brownian_v3.log 2>&1
           code=$?
-          cp /tmp/edge_capture_manifest.txt edge_outputs/scheduled_brownian_capture_manifest.txt
-          cp /tmp/edge_capture_sha256.txt edge_outputs/scheduled_brownian_capture_sha256.txt
-          printf '{"scheduled_brownian_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/scheduled_brownian_optimization_status.json
-          cat edge_outputs/scheduled_brownian_optimization.log
+          cp /tmp/edge_capture_manifest.txt edge_outputs/scheduled_brownian_v3_capture_manifest.txt
+          cp /tmp/edge_capture_sha256.txt edge_outputs/scheduled_brownian_v3_capture_sha256.txt
+          printf '{"scheduled_brownian_v3_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/scheduled_brownian_v3_status.json
+          cat edge_outputs/scheduled_brownian_v3.log
           exit 0
 
       - name: Commit development output
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/scheduled_brownian_optimization_status.json \
-                  edge_outputs/scheduled_brownian_optimization.log \
-                  edge_outputs/scheduled_brownian_capture_manifest.txt \
-                  edge_outputs/scheduled_brownian_capture_sha256.txt
-          test ! -f edge_outputs/scheduled_brownian_optimization.json || git add edge_outputs/scheduled_brownian_optimization.json
-          git diff --cached --quiet || git commit -m 'EDGE scheduled-denominator optimization output [skip ci]'
+          git add edge_outputs/scheduled_brownian_v3_status.json \
+                  edge_outputs/scheduled_brownian_v3.log \
+                  edge_outputs/scheduled_brownian_v3_capture_manifest.txt \
+                  edge_outputs/scheduled_brownian_v3_capture_sha256.txt
+          test ! -f edge_outputs/scheduled_brownian_v3.json || git add edge_outputs/scheduled_brownian_v3.json
+          git diff --cached --quiet || git commit -m 'EDGE persistent-liquidity v3 output [skip ci]'
           git push origin HEAD:edge-research-20260811
