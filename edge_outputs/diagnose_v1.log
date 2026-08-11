@@ -1,0 +1,10 @@
+{
+  "train_markets": 32,
+  "validation_markets": 18,
+  "reason_counts": {
+    "state_none": 13728,
+    "remaining_gt_30": 974,
+    "avg_ask_none": 187,
+    "duplicate_remaining": 205
+  }
+}
