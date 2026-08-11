@@ -25,26 +25,21 @@ jobs:
           cd /tmp/btpred-data
           git sparse-checkout set kalshi_15m_live kalshi_perp
           git checkout main
-      - name: Run exploratory round and retain diagnostics
+      - name: Run temporal complement research and retain diagnostics
         shell: bash
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/explore_fast.py > edge_outputs/explore_v1.log 2>&1
-          code1=$?
-          python3 edge_research/diagnose_v1.py > edge_outputs/diagnose_v1.log 2>&1
-          code2=$?
-          printf '{"explore_exit_code":%s,"diagnose_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code1" "$code2" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/explore_v1_status.json
-          cat edge_outputs/explore_v1.log
-          cat edge_outputs/diagnose_v1.log
+          python3 edge_research/explore_temporal_box.py > edge_outputs/temporal_box_v1.log 2>&1
+          code=$?
+          printf '{"temporal_box_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/temporal_box_v1_status.json
+          cat edge_outputs/temporal_box_v1.log
           exit 0
       - name: Commit research output and diagnostics
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/explore_v1_status.json edge_outputs/explore_v1.log edge_outputs/diagnose_v1.log
-          test ! -f edge_outputs/explore_v1.json || git add edge_outputs/explore_v1.json
-          test ! -f edge_outputs/explore_v1.md || git add edge_outputs/explore_v1.md
-          test ! -f edge_outputs/diagnose_v1.json || git add edge_outputs/diagnose_v1.json
-          git diff --cached --quiet || git commit -m 'EDGE round 1 opportunity diagnostics [skip ci]'
+          git add edge_outputs/temporal_box_v1_status.json edge_outputs/temporal_box_v1.log
+          test ! -f edge_outputs/temporal_box_v1.json || git add edge_outputs/temporal_box_v1.json
+          git diff --cached --quiet || git commit -m 'EDGE temporal complement diagnostics [skip ci]'
           git push origin HEAD:edge-research-20260811
