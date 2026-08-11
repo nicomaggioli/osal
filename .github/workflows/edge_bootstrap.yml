@@ -26,7 +26,7 @@ jobs:
           git sparse-checkout set kalshi_15m_live kalshi_perp
           git checkout main
       - name: Run exploratory round 1
-        run: python3 edge_research/explore_v1.py
+        run: python3 edge_research/explore_fast.py
       - name: Commit research output
         run: |
           git config user.name 'EDGE Research Bot'
