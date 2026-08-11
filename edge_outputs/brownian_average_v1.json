@@ -1,0 +1,3274 @@
+{
+  "best": {
+    "after_strongest_capture_mean": 6.5515384615384615,
+    "after_top10_mean": 6.086111111111112,
+    "annual_lcb95": 31236.77564243354,
+    "annualized": 339634.93333333335,
+    "capture_means": [
+      17.86,
+      8.507142857142858,
+      12.81,
+      0.0
+    ],
+    "losses": 0,
+    "markets": 18,
+    "mean_per_market": 9.692777777777778,
+    "model": {
+      "sigma_multiplier": 0.75,
+      "sigma_window": 60
+    },
+    "params": {
+      "edge_min": 0.02,
+      "latency_ms": 2000,
+      "max_ask": 0.9,
+      "max_seconds_to_close": 300,
+      "min_seconds_to_close": 45,
+      "p_min": 0.8
+    },
+    "partial_or_failed": 0,
+    "records": [
+      {
+        "ask": 0.74,
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "fees": 1.32,
+        "open_ms": 1785589200000,
+        "p_side": 0.8067674851164435,
+        "pnl": 23.68,
+        "qty": 100.0,
+        "seconds_to_close": 272.614857,
+        "side": "yes",
+        "ticker": "KXBTC15M-26AUG010915-15",
+        "win": true
+      },
+      {
+        "ask": 0.5868994999999999,
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "fees": 1.7,
+        "open_ms": 1785591000000,
+        "p_side": 0.8239462071521838,
+        "pnl": 39.3,
+        "qty": 100.0,
+        "seconds_to_close": 222.626957,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG010945-45",
+        "win": true
+      },
+      {
+        "ask": 0.83,
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "fees": 0.99,
+        "open_ms": 1785591900000,
+        "p_side": 0.9800337753299084,
+        "pnl": 16.01,
+        "qty": 100.0,
+        "seconds_to_close": 299.228501,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG011000-00",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "open_ms": 1785593700000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011030-30",
+        "win": null
+      },
+      {
+        "ask": 0.89,
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "fees": 0.69,
+        "open_ms": 1785594600000,
+        "p_side": 0.9489777265508434,
+        "pnl": 10.31,
+        "qty": 100.0,
+        "seconds_to_close": 280.947634,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG011045-45",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "open_ms": 1785597300000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011130-30",
+        "win": null
+      },
+      {
+        "ask": 0.77,
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "fees": 1.38,
+        "open_ms": 1785598200000,
+        "p_side": 0.8585263214882406,
+        "pnl": 25.62,
+        "qty": 100.0,
+        "seconds_to_close": 181.146841,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG011145-45",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "open_ms": 1785599100000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011200-00",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "open_ms": 1785600000000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011215-15",
+        "win": null
+      },
+      {
+        "ask": 0.81,
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "fees": 0.99,
+        "open_ms": 1785600900000,
+        "p_side": 0.9139859363648096,
+        "pnl": 16.01,
+        "qty": 100.0,
+        "seconds_to_close": 298.506962,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG011230-30",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "open_ms": 1785602700000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011300-00",
+        "win": null
+      },
+      {
+        "ask": 0.83,
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "fees": 1.08,
+        "open_ms": 1785604500000,
+        "p_side": 0.8632493773351579,
+        "pnl": 17.92,
+        "qty": 100.0,
+        "seconds_to_close": 289.599601,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG011330-30",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+        "open_ms": 1785648600000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020145-45",
+        "win": null
+      },
+      {
+        "ask": 0.73,
+        "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+        "fees": 1.38,
+        "open_ms": 1785652200000,
+        "p_side": 0.8583280526960317,
+        "pnl": 25.62,
+        "qty": 100.0,
+        "seconds_to_close": 172.328513,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG020245-45",
+        "win": true
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "open_ms": 1785658500000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020430-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "open_ms": 1785661200000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020515-15",
+        "win": null
+      },
+      {
+        "ask": 0.76,
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "fees": 0.0,
+        "open_ms": 1785662100000,
+        "p_side": 0.842114461436051,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "seconds_to_close": 131.751087,
+        "side": "no",
+        "ticker": "KXBTC15M-26AUG020530-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "open_ms": 1785665700000,
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020630-30",
+        "win": null
+      }
+    ],
+    "third_means": [
+      14.883333333333333,
+      9.925,
+      4.2700000000000005
+    ],
+    "total_pnl": 174.47,
+    "trades": 8,
+    "wins": 8
+  },
+  "opened_captures": [
+    "KXBTC15M-20260731T190212Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T195913Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T204522Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T234548Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T024606Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T054633Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T084650Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T073326Z-10800s.jsonl.gz"
+  ],
+  "opportunity_diagnostics": [
+    {
+      "multiplier": 0.75,
+      "opportunities": 13416,
+      "window": 30
+    },
+    {
+      "multiplier": 1.0,
+      "opportunities": 13416,
+      "window": 30
+    },
+    {
+      "multiplier": 1.25,
+      "opportunities": 13416,
+      "window": 30
+    },
+    {
+      "multiplier": 1.5,
+      "opportunities": 13416,
+      "window": 30
+    },
+    {
+      "multiplier": 0.75,
+      "opportunities": 13416,
+      "window": 60
+    },
+    {
+      "multiplier": 1.0,
+      "opportunities": 13416,
+      "window": 60
+    },
+    {
+      "multiplier": 1.25,
+      "opportunities": 13416,
+      "window": 60
+    },
+    {
+      "multiplier": 1.5,
+      "opportunities": 13416,
+      "window": 60
+    },
+    {
+      "multiplier": 0.75,
+      "opportunities": 13416,
+      "window": 120
+    },
+    {
+      "multiplier": 1.0,
+      "opportunities": 13416,
+      "window": 120
+    },
+    {
+      "multiplier": 1.25,
+      "opportunities": 13416,
+      "window": 120
+    },
+    {
+      "multiplier": 1.5,
+      "opportunities": 13416,
+      "window": 120
+    }
+  ],
+  "round": "settlement-average variance arbitrage v1",
+  "top20_by_total": [
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.173076923076923,
+      "after_top10_mean": 5.090555555555556,
+      "annual_lcb95": -1469.1294234013249,
+      "annualized": 304750.6666666667,
+      "capture_means": [
+        17.86,
+        5.9471428571428575,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.697222222222223,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        6.9383333333333335,
+        4.2700000000000005
+      ],
+      "total_pnl": 156.55,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 5.173076923076923,
+      "after_top10_mean": 5.090555555555556,
+      "annual_lcb95": -1469.1294234013249,
+      "annualized": 304750.6666666667,
+      "capture_means": [
+        17.86,
+        5.9471428571428575,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.697222222222223,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        6.9383333333333335,
+        4.2700000000000005
+      ],
+      "total_pnl": 156.55,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 5.173076923076923,
+      "after_top10_mean": 5.090555555555556,
+      "annual_lcb95": -1469.1294234013249,
+      "annualized": 304750.6666666667,
+      "capture_means": [
+        17.86,
+        5.9471428571428575,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.697222222222223,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        6.9383333333333335,
+        4.2700000000000005
+      ],
+      "total_pnl": 156.55,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 5.173076923076923,
+      "after_top10_mean": 5.090555555555556,
+      "annual_lcb95": -1469.1294234013249,
+      "annualized": 304750.6666666667,
+      "capture_means": [
+        17.86,
+        5.9471428571428575,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.697222222222223,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        6.9383333333333335,
+        4.2700000000000005
+      ],
+      "total_pnl": 156.55,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 4.257769230769231,
+      "after_top10_mean": 4.431111111111111,
+      "annual_lcb95": -28353.499668574495,
+      "annualized": 282647.92133333336,
+      "capture_means": [
+        17.968970000000002,
+        4.251428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.066436111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        4.96,
+        4.265166666666667
+      ],
+      "total_pnl": 145.19585,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 4.257769230769231,
+      "after_top10_mean": 4.431111111111111,
+      "annual_lcb95": -28353.499668574495,
+      "annualized": 282647.92133333336,
+      "capture_means": [
+        17.968970000000002,
+        4.251428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.066436111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        4.96,
+        4.265166666666667
+      ],
+      "total_pnl": 145.19585,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 4.257769230769231,
+      "after_top10_mean": 4.431111111111111,
+      "annual_lcb95": -28353.499668574495,
+      "annualized": 282647.92133333336,
+      "capture_means": [
+        17.968970000000002,
+        4.251428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.066436111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        4.96,
+        4.265166666666667
+      ],
+      "total_pnl": 145.19585,
+      "trades": 7,
+      "wins": 7
+    },
+    {
+      "after_strongest_capture_mean": 4.257769230769231,
+      "after_top10_mean": 4.431111111111111,
+      "annual_lcb95": -28353.499668574495,
+      "annualized": 282647.92133333336,
+      "capture_means": [
+        17.968970000000002,
+        4.251428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 8.066436111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        4.96,
+        4.265166666666667
+      ],
+      "total_pnl": 145.19585,
+      "trades": 7,
+      "wins": 7
+    }
+  ],
+  "top50": [
+    {
+      "after_strongest_capture_mean": 6.080076923076924,
+      "after_top10_mean": 3.8572777777777785,
+      "annual_lcb95": 124144.34180342121,
+      "annualized": 262597.2546666667,
+      "capture_means": [
+        11.17097,
+        4.802857142857143,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 7.494213888888889,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        9.309141666666667,
+        5.603333333333334,
+        7.570166666666668
+      ],
+      "total_pnl": 134.89585,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.080076923076924,
+      "after_top10_mean": 3.8572777777777785,
+      "annual_lcb95": 124144.34180342121,
+      "annualized": 262597.2546666667,
+      "capture_means": [
+        11.17097,
+        4.802857142857143,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 7.494213888888889,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        9.309141666666667,
+        5.603333333333334,
+        7.570166666666668
+      ],
+      "total_pnl": 134.89585,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.080076923076924,
+      "after_top10_mean": 3.8572777777777785,
+      "annual_lcb95": 124144.34180342121,
+      "annualized": 262597.2546666667,
+      "capture_means": [
+        11.17097,
+        4.802857142857143,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 7.494213888888889,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        9.309141666666667,
+        5.603333333333334,
+        7.570166666666668
+      ],
+      "total_pnl": 134.89585,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.080076923076924,
+      "after_top10_mean": 3.8572777777777785,
+      "annual_lcb95": 124144.34180342121,
+      "annualized": 262597.2546666667,
+      "capture_means": [
+        11.17097,
+        4.802857142857143,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 7.494213888888889,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        9.309141666666667,
+        5.603333333333334,
+        7.570166666666668
+      ],
+      "total_pnl": 134.89585,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.001818181818181,
+      "after_top10_mean": 3.6144444444444446,
+      "annual_lcb95": 108609.32635247029,
+      "annualized": 222620.80000000002,
+      "capture_means": [
+        4.502,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.3533333333333335,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 114.36,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.001818181818181,
+      "after_top10_mean": 3.6144444444444446,
+      "annual_lcb95": 108609.32635247029,
+      "annualized": 222620.80000000002,
+      "capture_means": [
+        4.502,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.3533333333333335,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 114.36,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.001818181818181,
+      "after_top10_mean": 3.6144444444444446,
+      "annual_lcb95": 108609.32635247029,
+      "annualized": 222620.80000000002,
+      "capture_means": [
+        4.502,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.3533333333333335,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 114.36,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 6.001818181818181,
+      "after_top10_mean": 3.6144444444444446,
+      "annual_lcb95": 108609.32635247029,
+      "annualized": 222620.80000000002,
+      "capture_means": [
+        4.502,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.3533333333333335,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 114.36,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 5.4646923076923075,
+      "after_top10_mean": 2.5233888888888893,
+      "annual_lcb95": 90114.01060707911,
+      "annualized": 215857.788,
+      "capture_means": [
+        7.9689700000000006,
+        3.66,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.160325,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.8,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.640808333333333,
+        4.2700000000000005,
+        7.570166666666668
+      ],
+      "total_pnl": 110.88585,
+      "trades": 4,
+      "wins": 4
+    },
+    {
+      "after_strongest_capture_mean": 5.4646923076923075,
+      "after_top10_mean": 2.5233888888888893,
+      "annual_lcb95": 90114.01060707911,
+      "annualized": 215857.788,
+      "capture_means": [
+        7.9689700000000006,
+        3.66,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.160325,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.8,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.640808333333333,
+        4.2700000000000005,
+        7.570166666666668
+      ],
+      "total_pnl": 110.88585,
+      "trades": 4,
+      "wins": 4
+    },
+    {
+      "after_strongest_capture_mean": 5.4646923076923075,
+      "after_top10_mean": 2.5233888888888893,
+      "annual_lcb95": 90114.01060707911,
+      "annualized": 215857.788,
+      "capture_means": [
+        7.9689700000000006,
+        3.66,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.160325,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.8,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.640808333333333,
+        4.2700000000000005,
+        7.570166666666668
+      ],
+      "total_pnl": 110.88585,
+      "trades": 4,
+      "wins": 4
+    },
+    {
+      "after_strongest_capture_mean": 5.4646923076923075,
+      "after_top10_mean": 2.5233888888888893,
+      "annual_lcb95": 90114.01060707911,
+      "annualized": 215857.788,
+      "capture_means": [
+        7.9689700000000006,
+        3.66,
+        12.795500000000002,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.160325,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 500,
+        "max_ask": 0.8,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.640808333333333,
+        4.2700000000000005,
+        7.570166666666668
+      ],
+      "total_pnl": 110.88585,
+      "trades": 4,
+      "wins": 4
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.504615384615385,
+      "after_top10_mean": 3.187777777777778,
+      "annual_lcb95": 72779.88078292021,
+      "annualized": 194530.40000000002,
+      "capture_means": [
+        8.274000000000001,
+        2.2871428571428574,
+        11.36,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.551666666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        6.8950000000000005,
+        2.6683333333333334,
+        7.091666666666666
+      ],
+      "total_pnl": 99.93,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 4.727692307692307,
+      "after_top10_mean": 2.8805555555555555,
+      "annual_lcb95": 67515.21420224424,
+      "annualized": 227312.26666666666,
+      "capture_means": [
+        11.062000000000001,
+        2.2871428571428574,
+        12.81,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.487222222222222,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        9.218333333333334,
+        2.6683333333333334,
+        7.575
+      ],
+      "total_pnl": 116.77,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.727692307692307,
+      "after_top10_mean": 2.8805555555555555,
+      "annual_lcb95": 67515.21420224424,
+      "annualized": 227312.26666666666,
+      "capture_means": [
+        11.062000000000001,
+        2.2871428571428574,
+        12.81,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.487222222222222,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        9.218333333333334,
+        2.6683333333333334,
+        7.575
+      ],
+      "total_pnl": 116.77,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.727692307692307,
+      "after_top10_mean": 2.8805555555555555,
+      "annual_lcb95": 67515.21420224424,
+      "annualized": 227312.26666666666,
+      "capture_means": [
+        11.062000000000001,
+        2.2871428571428574,
+        12.81,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.487222222222222,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        9.218333333333334,
+        2.6683333333333334,
+        7.575
+      ],
+      "total_pnl": 116.77,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.727692307692307,
+      "after_top10_mean": 2.8805555555555555,
+      "annual_lcb95": 67515.21420224424,
+      "annualized": 227312.26666666666,
+      "capture_means": [
+        11.062000000000001,
+        2.2871428571428574,
+        12.81,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 6.487222222222222,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.08,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        9.218333333333334,
+        2.6683333333333334,
+        7.575
+      ],
+      "total_pnl": 116.77,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.892727272727273,
+      "after_top10_mean": 2.9366666666666665,
+      "annual_lcb95": 56135.06542300101,
+      "annualized": 198871.46666666667,
+      "capture_means": [
+        2.0620000000000003,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.6755555555555555,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        1.7183333333333335,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 102.16,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.892727272727273,
+      "after_top10_mean": 2.9366666666666665,
+      "annual_lcb95": 56135.06542300101,
+      "annualized": 198871.46666666667,
+      "capture_means": [
+        2.0620000000000003,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.6755555555555555,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        1.7183333333333335,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 102.16,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.892727272727273,
+      "after_top10_mean": 2.9366666666666665,
+      "annual_lcb95": 56135.06542300101,
+      "annualized": 198871.46666666667,
+      "capture_means": [
+        2.0620000000000003,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.6755555555555555,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        1.7183333333333335,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 102.16,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.892727272727273,
+      "after_top10_mean": 2.9366666666666665,
+      "annual_lcb95": 56135.06542300101,
+      "annualized": 198871.46666666667,
+      "capture_means": [
+        2.0620000000000003,
+        6.905714285714287,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.6755555555555555,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        1.7183333333333335,
+        8.056666666666667,
+        7.251666666666666
+      ],
+      "total_pnl": 102.16,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.0675,
+      "after_top10_mean": 2.3533333333333335,
+      "annual_lcb95": 55626.84462840949,
+      "annualized": 172786.13333333333,
+      "capture_means": [
+        4.314,
+        3.2457142857142856,
+        11.84,
+        5.1975
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.931111111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.595,
+        3.7866666666666666,
+        7.411666666666666
+      ],
+      "total_pnl": 88.75999999999999,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.0675,
+      "after_top10_mean": 2.3533333333333335,
+      "annual_lcb95": 55626.84462840949,
+      "annualized": 172786.13333333333,
+      "capture_means": [
+        4.314,
+        3.2457142857142856,
+        11.84,
+        5.1975
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.931111111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.595,
+        3.7866666666666666,
+        7.411666666666666
+      ],
+      "total_pnl": 88.75999999999999,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.0675,
+      "after_top10_mean": 2.3533333333333335,
+      "annual_lcb95": 55626.84462840949,
+      "annualized": 172786.13333333333,
+      "capture_means": [
+        4.314,
+        3.2457142857142856,
+        11.84,
+        5.1975
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.931111111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.595,
+        3.7866666666666666,
+        7.411666666666666
+      ],
+      "total_pnl": 88.75999999999999,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.0675,
+      "after_top10_mean": 2.3533333333333335,
+      "annual_lcb95": 55626.84462840949,
+      "annualized": 172786.13333333333,
+      "capture_means": [
+        4.314,
+        3.2457142857142856,
+        11.84,
+        5.1975
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.931111111111111,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.595,
+        3.7866666666666666,
+        7.411666666666666
+      ],
+      "total_pnl": 88.75999999999999,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.06625,
+      "after_top10_mean": 2.352222222222222,
+      "annual_lcb95": 55421.34301036984,
+      "annualized": 172747.19999999998,
+      "capture_means": [
+        4.502,
+        3.2457142857142856,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.93,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        3.7866666666666666,
+        7.251666666666666
+      ],
+      "total_pnl": 88.74,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.06625,
+      "after_top10_mean": 2.352222222222222,
+      "annual_lcb95": 55421.34301036984,
+      "annualized": 172747.19999999998,
+      "capture_means": [
+        4.502,
+        3.2457142857142856,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.93,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        3.7866666666666666,
+        7.251666666666666
+      ],
+      "total_pnl": 88.74,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.06625,
+      "after_top10_mean": 2.352222222222222,
+      "annual_lcb95": 55421.34301036984,
+      "annualized": 172747.19999999998,
+      "capture_means": [
+        4.502,
+        3.2457142857142856,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.93,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        3.7866666666666666,
+        7.251666666666666
+      ],
+      "total_pnl": 88.74,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 4.06625,
+      "after_top10_mean": 2.352222222222222,
+      "annual_lcb95": 55421.34301036984,
+      "annualized": 172747.19999999998,
+      "capture_means": [
+        4.502,
+        3.2457142857142856,
+        11.84,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 4.93,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 30
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 180,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        3.7516666666666665,
+        3.7866666666666666,
+        7.251666666666666
+      ],
+      "total_pnl": 88.74,
+      "trades": 5,
+      "wins": 5
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    },
+    {
+      "after_strongest_capture_mean": 3.8195269230769235,
+      "after_top10_mean": 2.742777777777778,
+      "annual_lcb95": 47288.91416289525,
+      "annualized": 177193.0946666667,
+      "capture_means": [
+        8.274000000000001,
+        1.1428571428571428,
+        10.911925000000004,
+        4.9575
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 5.056880555555556,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        6.8950000000000005,
+        1.3333333333333333,
+        6.942308333333334
+      ],
+      "total_pnl": 91.02385000000001,
+      "trades": 6,
+      "wins": 6
+    }
+  ],
+  "top50_robust": [
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 6.5515384615384615,
+      "after_top10_mean": 6.086111111111112,
+      "annual_lcb95": 31236.77564243354,
+      "annualized": 339634.93333333335,
+      "capture_means": [
+        17.86,
+        8.507142857142858,
+        12.81,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.692777777777778,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 2000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        14.883333333333333,
+        9.925,
+        4.2700000000000005
+      ],
+      "total_pnl": 174.47,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.650076923076923,
+      "after_top10_mean": 5.436666666666666,
+      "annual_lcb95": 10118.86269963228,
+      "annualized": 317882.588,
+      "capture_means": [
+        17.968970000000002,
+        6.837142857142855,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.071991666666667,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 500,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.976666666666664,
+        4.265166666666667
+      ],
+      "total_pnl": 163.29585,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 45,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 60,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 75,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    },
+    {
+      "after_strongest_capture_mean": 5.63623076923077,
+      "after_top10_mean": 5.426666666666667,
+      "annual_lcb95": 9776.201476981954,
+      "annualized": 317532.188,
+      "capture_means": [
+        17.968970000000002,
+        6.811428571428572,
+        12.795500000000002,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 9.061991666666668,
+      "model": {
+        "sigma_multiplier": 0.75,
+        "sigma_window": 60
+      },
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 1000,
+        "max_ask": 0.9,
+        "max_seconds_to_close": 300,
+        "min_seconds_to_close": 90,
+        "p_min": 0.8
+      },
+      "partial_or_failed": 1,
+      "third_means": [
+        14.974141666666668,
+        7.946666666666668,
+        4.265166666666667
+      ],
+      "total_pnl": 163.11585000000002,
+      "trades": 8,
+      "wins": 8
+    }
+  ],
+  "train_markets": 32,
+  "untouched_after_development": [
+    "KXBTC15M-20260802T103339Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T133352Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T215854Z-10800s.jsonl.gz",
+    "KXBTC15M-20260803T141530Z-10800s.jsonl.gz",
+    "KXBTC15M-20260803T171548Z-10800s.jsonl.gz",
+    "KXBTC15M-20260809T213835Z-10800s.jsonl.gz",
+    "KXBTC15M-20260810T003855Z-10800s.jsonl.gz"
+  ],
+  "validation_markets": 18
+}

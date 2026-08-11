@@ -1,0 +1,36 @@
+{
+  "params": {
+    "latency_ms": 2000,
+    "min_seconds_to_close": 45,
+    "max_seconds_to_close": 300,
+    "p_min": 0.8,
+    "edge_min": 0.02,
+    "max_ask": 0.9
+  },
+  "markets": 18,
+  "trades": 8,
+  "wins": 8,
+  "losses": 0,
+  "partial_or_failed": 0,
+  "total_pnl": 174.47,
+  "mean_per_market": 9.692777777777778,
+  "annualized": 339634.93333333335,
+  "annual_lcb95": 31236.77564243354,
+  "capture_means": [
+    17.86,
+    8.507142857142858,
+    12.81,
+    0.0
+  ],
+  "third_means": [
+    14.883333333333333,
+    9.925,
+    4.2700000000000005
+  ],
+  "after_top10_mean": 6.086111111111112,
+  "after_strongest_capture_mean": 6.5515384615384615,
+  "model": {
+    "sigma_window": 60,
+    "sigma_multiplier": 0.75
+  }
+}
