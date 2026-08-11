@@ -9,13 +9,34 @@ KXBTC15M-20260801T114704Z-10800s.jsonl.gz 5 complete markets
 KXBTC15M-20260801T144719Z-10800s.jsonl.gz 7 complete markets
 KXBTC15M-20260802T043308Z-10800s.jsonl.gz 2 complete markets
 KXBTC15M-20260802T073326Z-10800s.jsonl.gz 4 complete markets
-Traceback (most recent call last):
-  File "/home/runner/work/osal/osal/edge_research/explore_fast.py", line 67, in <module>
-    edge.main()
-  File "/home/runner/work/osal/osal/edge_research/explore_v1.py", line 488, in main
-    r = evaluate(params, val_opps, market_keys)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osal/osal/edge_research/explore_v1.py", line 453, in evaluate
-    "capture_means": capture_means.tolist(), "third_means": thirds,
-                     ^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'Array' object has no attribute 'tolist'
+{
+  "params": {
+    "latency_ms": 0,
+    "max_remaining": 1,
+    "p_min": 0.9,
+    "edge_min": 0.0,
+    "max_ask": 0.8
+  },
+  "markets": 18,
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "partial_or_failed": 0,
+  "total_pnl": 0.0,
+  "mean_per_market": 0.0,
+  "annualized": 0.0,
+  "annual_lcb95": 0.0,
+  "capture_means": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "third_means": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "after_top10_mean": 0.0,
+  "after_strongest_capture_mean": 0.0
+}

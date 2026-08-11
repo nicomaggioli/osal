@@ -1,0 +1,1988 @@
+{
+  "best": {
+    "after_strongest_capture_mean": 0.0,
+    "after_top10_mean": 0.0,
+    "annual_lcb95": 0.0,
+    "annualized": 0.0,
+    "capture_means": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "losses": 0,
+    "markets": 18,
+    "mean_per_market": 0.0,
+    "params": {
+      "edge_min": 0.0,
+      "latency_ms": 0,
+      "max_ask": 0.8,
+      "max_remaining": 1,
+      "p_min": 0.9
+    },
+    "partial_or_failed": 0,
+    "records": [
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG010915-15",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG010945-45",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011000-00",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011030-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011045-45",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011130-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011145-45",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011200-00",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011215-15",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011230-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011300-00",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG011330-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020145-45",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020245-45",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020430-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020515-15",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020530-30",
+        "win": null
+      },
+      {
+        "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+        "pnl": 0.0,
+        "qty": 0.0,
+        "ticker": "KXBTC15M-26AUG020630-30",
+        "win": null
+      }
+    ],
+    "third_means": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "total_pnl": 0.0,
+    "trades": 0,
+    "wins": 0
+  },
+  "error_model": {
+    "0": {
+      "mu": 0.012083333333430346,
+      "n": 40,
+      "sd": 0.05719116476327351
+    },
+    "1": {
+      "mu": 0.012083333333430346,
+      "n": 40,
+      "sd": 0.05719116476327351
+    },
+    "10": {
+      "mu": 0.1349673202616852,
+      "n": 51,
+      "sd": 0.6973440053262068
+    },
+    "11": {
+      "mu": 0.042452830189091094,
+      "n": 53,
+      "sd": 1.3051981732315179
+    },
+    "12": {
+      "mu": -0.06575757575721417,
+      "n": 55,
+      "sd": 1.6709096597087547
+    },
+    "13": {
+      "mu": -0.22807017543834118,
+      "n": 57,
+      "sd": 1.9482145437202056
+    },
+    "14": {
+      "mu": -0.26149425287339595,
+      "n": 58,
+      "sd": 1.9709326182445295
+    },
+    "15": {
+      "mu": -0.3080459770112768,
+      "n": 58,
+      "sd": 1.9876254540409275
+    },
+    "16": {
+      "mu": -0.28304597701120154,
+      "n": 58,
+      "sd": 1.976500307434575
+    },
+    "17": {
+      "mu": -0.28918128654939274,
+      "n": 57,
+      "sd": 1.961101172849077
+    },
+    "18": {
+      "mu": -0.2806547619045107,
+      "n": 56,
+      "sd": 1.96781893104343
+    },
+    "19": {
+      "mu": -0.3032738095237489,
+      "n": 56,
+      "sd": 2.024360897524205
+    },
+    "2": {
+      "mu": 0.022764227642300086,
+      "n": 41,
+      "sd": 0.07269208154670927
+    },
+    "20": {
+      "mu": -0.29736842105296346,
+      "n": 57,
+      "sd": 2.1036373658077796
+    },
+    "21": {
+      "mu": -0.2974137931040755,
+      "n": 58,
+      "sd": 2.226129170389438
+    },
+    "22": {
+      "mu": -0.3198830409363788,
+      "n": 57,
+      "sd": 2.3084262151294626
+    },
+    "23": {
+      "mu": -0.3833333333338617,
+      "n": 56,
+      "sd": 2.373234702794152
+    },
+    "24": {
+      "mu": -0.41063218390853107,
+      "n": 58,
+      "sd": 2.329255564023039
+    },
+    "25": {
+      "mu": -0.30861581920945064,
+      "n": 59,
+      "sd": 2.3910938632422165
+    },
+    "26": {
+      "mu": -0.2186827956991751,
+      "n": 62,
+      "sd": 2.3932567764793364
+    },
+    "27": {
+      "mu": -0.13584656084646077,
+      "n": 63,
+      "sd": 2.4276682654519943
+    },
+    "28": {
+      "mu": -0.1434343434341303,
+      "n": 66,
+      "sd": 2.4533799265120377
+    },
+    "29": {
+      "mu": -0.1465174129350917,
+      "n": 67,
+      "sd": 2.518210466404115
+    },
+    "3": {
+      "mu": 0.029844961240298798,
+      "n": 43,
+      "sd": 0.09628394469897834
+    },
+    "30": {
+      "mu": -0.16592592592577501,
+      "n": 45,
+      "sd": 2.5870217443399137
+    },
+    "4": {
+      "mu": 0.028518518518669426,
+      "n": 45,
+      "sd": 0.1890792582725546
+    },
+    "5": {
+      "mu": 0.023913043478387408,
+      "n": 46,
+      "sd": 0.2558215665514636
+    },
+    "6": {
+      "mu": 0.01950354609908437,
+      "n": 47,
+      "sd": 0.3025726875758462
+    },
+    "7": {
+      "mu": 0.0027777777772826084,
+      "n": 48,
+      "sd": 0.3156945230984806
+    },
+    "8": {
+      "mu": 0.029931972788680077,
+      "n": 49,
+      "sd": 0.42003296836677706
+    },
+    "9": {
+      "mu": 0.08599999999991269,
+      "n": 50,
+      "sd": 0.5533121881458183
+    }
+  },
+  "excluded_schema_inspection_capture": "KXBTC15M-20260803T171548Z-10800s.jsonl.gz",
+  "inventory": [
+    {
+      "dt": "2026-07-31T19:02:12+00:00",
+      "kalshi": "KXBTC15M-20260731T190212Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260731T190212Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-07-31T19:59:13+00:00",
+      "kalshi": "KXBTC15M-20260731T195913Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260731T195913Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-07-31T20:45:22+00:00",
+      "kalshi": "KXBTC15M-20260731T204522Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260731T204523Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-07-31T23:45:48+00:00",
+      "kalshi": "KXBTC15M-20260731T234548Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260731T234536Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-01T02:46:06+00:00",
+      "kalshi": "KXBTC15M-20260801T024606Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260801T024552Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-01T05:46:33+00:00",
+      "kalshi": "KXBTC15M-20260801T054633Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260801T054606Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-01T08:46:50+00:00",
+      "kalshi": "KXBTC15M-20260801T084650Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260801T084618Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-01T11:47:04+00:00",
+      "kalshi": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260801T114629Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-01T14:47:19+00:00",
+      "kalshi": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260801T144641Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-02T04:33:08+00:00",
+      "kalshi": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260802T043308Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-02T07:33:26+00:00",
+      "kalshi": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260802T073318Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-02T10:33:39+00:00",
+      "kalshi": "KXBTC15M-20260802T103339Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260802T103330Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-02T13:33:52+00:00",
+      "kalshi": "KXBTC15M-20260802T133352Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260802T133342Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-02T21:58:54+00:00",
+      "kalshi": "KXBTC15M-20260802T215854Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260802T215837Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-03T14:15:30+00:00",
+      "kalshi": "KXBTC15M-20260803T141530Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260803T141500Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-03T17:15:48+00:00",
+      "kalshi": "KXBTC15M-20260803T171548Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260803T171515Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-09T21:38:35+00:00",
+      "kalshi": "KXBTC15M-20260809T213835Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260809T213835Z-10800s.jsonl.gz"
+    },
+    {
+      "dt": "2026-08-10T00:38:55+00:00",
+      "kalshi": "KXBTC15M-20260810T003855Z-10800s.jsonl.gz",
+      "perp": "KXBTCPERP-20260810T003846Z-10800s.jsonl.gz"
+    }
+  ],
+  "opened_captures": [
+    "KXBTC15M-20260731T190212Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T195913Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T204522Z-10800s.jsonl.gz",
+    "KXBTC15M-20260731T234548Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T024606Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T054633Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T084650Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+    "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T073326Z-10800s.jsonl.gz"
+  ],
+  "reserved_unopened_holdout": [
+    "KXBTC15M-20260802T103339Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T133352Z-10800s.jsonl.gz",
+    "KXBTC15M-20260802T215854Z-10800s.jsonl.gz",
+    "KXBTC15M-20260803T141530Z-10800s.jsonl.gz"
+  ],
+  "round": "BRTI running-average Gaussian residual v1",
+  "top50": [
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.02,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.03,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.03,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.03,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.03,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.03,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.05,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.1,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.1,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.1,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.1,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.1,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.9
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.0,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.005,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.8,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.9,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.95,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.97,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    },
+    {
+      "after_strongest_capture_mean": 0.0,
+      "after_top10_mean": 0.0,
+      "annual_lcb95": 0.0,
+      "annualized": 0.0,
+      "capture_means": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "losses": 0,
+      "markets": 18,
+      "mean_per_market": 0.0,
+      "params": {
+        "edge_min": 0.01,
+        "latency_ms": 0,
+        "max_ask": 0.99,
+        "max_remaining": 1,
+        "p_min": 0.95
+      },
+      "partial_or_failed": 0,
+      "third_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "total_pnl": 0.0,
+      "trades": 0,
+      "wins": 0
+    }
+  ],
+  "top50_robust": [],
+  "train_markets": 32,
+  "train_state_rows": 560,
+  "validation_markets": 18,
+  "validation_opportunities": 0
+}
