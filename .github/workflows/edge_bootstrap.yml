@@ -12,7 +12,7 @@ permissions:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -26,21 +26,21 @@ jobs:
           git sparse-checkout set spot_1s kalshi_ticks
           git checkout main
           git lfs pull --include='spot_1s/BTCFDUSD-1s-2026-07-26.zip,spot_1s/BTCFDUSD-1s-2026-07-27.zip,spot_1s/BTCFDUSD-1s-2026-07-28.zip,kalshi_ticks/KXBTC15M-1s-2026-07-27.csv.gz,kalshi_ticks/KXBTC15M-1s-2026-07-28.csv.gz,kalshi_ticks/KXBTC15M-markets-2026-07-27_2026-07-30.csv.gz'
-      - name: Run efficient continuous development search
+      - name: Run fast causal probe
         shell: bash
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/continuous_spot_basis_fast.py > edge_outputs/continuous_spot_basis_dev.log 2>&1
+          python3 edge_research/continuous_spot_basis_probe.py > edge_outputs/continuous_spot_basis_probe.log 2>&1
           code=$?
-          printf '{"continuous_spot_basis_dev_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/continuous_spot_basis_dev_status.json
-          cat edge_outputs/continuous_spot_basis_dev.log
+          printf '{"continuous_spot_basis_probe_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/continuous_spot_basis_probe_status.json
+          cat edge_outputs/continuous_spot_basis_probe.log
           exit 0
-      - name: Commit development output
+      - name: Commit probe output
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/continuous_spot_basis_dev_status.json edge_outputs/continuous_spot_basis_dev.log
-          test ! -f edge_outputs/continuous_spot_basis_dev.json || git add edge_outputs/continuous_spot_basis_dev.json
-          git diff --cached --quiet || git commit -m 'EDGE continuous spot-basis development output [skip ci]'
+          git add edge_outputs/continuous_spot_basis_probe_status.json edge_outputs/continuous_spot_basis_probe.log
+          test ! -f edge_outputs/continuous_spot_basis_probe.json || git add edge_outputs/continuous_spot_basis_probe.json
+          git diff --cached --quiet || git commit -m 'EDGE continuous spot-basis causal probe output [skip ci]'
           git push origin HEAD:edge-research-20260811
