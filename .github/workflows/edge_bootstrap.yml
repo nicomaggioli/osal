@@ -18,28 +18,21 @@ jobs:
         with:
           ref: edge-research-20260811
           fetch-depth: 1
-      - name: Fetch public KXBTC15M and KXBTCPERP captures
-        run: |
-          rm -rf /tmp/btpred-data
-          GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --sparse https://github.com/Shad0wSeven/btpred-data.git /tmp/btpred-data
-          cd /tmp/btpred-data
-          git sparse-checkout set kalshi_15m_live kalshi_perp
-          git checkout main
-      - name: Run adversarial development verifier
+      - name: Run conservative denominator and dependence audit
         shell: bash
         run: |
           mkdir -p edge_outputs
           set +e
-          python3 edge_research/dev_verify_brownian.py > edge_outputs/brownian_dev_verifier.log 2>&1
+          python3 edge_research/denominator_audit.py > edge_outputs/denominator_audit.log 2>&1
           code=$?
-          printf '{"brownian_dev_verifier_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/brownian_dev_verifier_status.json
-          cat edge_outputs/brownian_dev_verifier.log
+          printf '{"denominator_audit_exit_code":%s,"commit":"%s","run_id":"%s"}\n' "$code" "$GITHUB_SHA" "$GITHUB_RUN_ID" > edge_outputs/denominator_audit_status.json
+          cat edge_outputs/denominator_audit.log
           exit 0
-      - name: Commit verifier output and diagnostics
+      - name: Commit audit output and diagnostics
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/brownian_dev_verifier_status.json edge_outputs/brownian_dev_verifier.log
-          test ! -f edge_outputs/brownian_dev_verifier.json || git add edge_outputs/brownian_dev_verifier.json
-          git diff --cached --quiet || git commit -m 'EDGE adversarial development verifier [skip ci]'
+          git add edge_outputs/denominator_audit_status.json edge_outputs/denominator_audit.log
+          test ! -f edge_outputs/denominator_audit.json || git add edge_outputs/denominator_audit.json
+          git diff --cached --quiet || git commit -m 'EDGE scheduled-market denominator audit [skip ci]'
           git push origin HEAD:edge-research-20260811
