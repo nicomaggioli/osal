@@ -1,0 +1,21 @@
+KXBTC15M-20260731T190212Z-10800s.jsonl.gz 1 complete markets
+KXBTC15M-20260731T195913Z-10800s.jsonl.gz 0 complete markets
+KXBTC15M-20260731T204522Z-10800s.jsonl.gz 4 complete markets
+KXBTC15M-20260731T234548Z-10800s.jsonl.gz 9 complete markets
+KXBTC15M-20260801T024606Z-10800s.jsonl.gz 5 complete markets
+KXBTC15M-20260801T054633Z-10800s.jsonl.gz 7 complete markets
+KXBTC15M-20260801T084650Z-10800s.jsonl.gz 6 complete markets
+KXBTC15M-20260801T114704Z-10800s.jsonl.gz 5 complete markets
+KXBTC15M-20260801T144719Z-10800s.jsonl.gz 7 complete markets
+KXBTC15M-20260802T043308Z-10800s.jsonl.gz 2 complete markets
+KXBTC15M-20260802T073326Z-10800s.jsonl.gz 4 complete markets
+Traceback (most recent call last):
+  File "/home/runner/work/osal/osal/edge_research/explore_fast.py", line 67, in <module>
+    edge.main()
+  File "/home/runner/work/osal/osal/edge_research/explore_v1.py", line 488, in main
+    r = evaluate(params, val_opps, market_keys)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osal/osal/edge_research/explore_v1.py", line 453, in evaluate
+    "capture_means": capture_means.tolist(), "third_means": thirds,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Array' object has no attribute 'tolist'
