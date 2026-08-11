@@ -17,6 +17,9 @@ class Array(list):
     def sum(self):
         return float(sum(float(x) for x in self))
 
+    def tolist(self):
+        return list(self)
+
 
 def array(values, dtype=None):
     return Array(float(x) for x in values)
