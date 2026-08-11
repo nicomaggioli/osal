@@ -1,4 +1,4 @@
-name: EDGE data bootstrap
+name: EDGE research
 
 on:
   push:
@@ -10,65 +10,27 @@ permissions:
   contents: write
 
 jobs:
-  bootstrap:
+  research:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
           ref: edge-research-20260811
           fetch-depth: 1
-      - name: Install Git LFS
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y git-lfs
-          git lfs install
-      - name: Fetch three synchronized public captures
+      - name: Fetch public KXBTC15M and KXBTCPERP captures
         run: |
           rm -rf /tmp/btpred-data
           GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --sparse https://github.com/Shad0wSeven/btpred-data.git /tmp/btpred-data
           cd /tmp/btpred-data
-          git sparse-checkout set --no-cone \
-            /kalshi_15m_live/KXBTC15M-20260810T003855Z-10800s.jsonl.gz \
-            /kalshi_perp/KXBTCPERP-20260810T003846Z-10800s.jsonl.gz \
-            /granular/spot_l2/BTCFDUSD-depth-20260810T003854Z-10800s.jsonl.gz
+          git sparse-checkout set kalshi_15m_live kalshi_perp
           git checkout main
-          git lfs pull --include='granular/spot_l2/BTCFDUSD-depth-20260810T003854Z-10800s.jsonl.gz'
-      - name: Inspect schemas and coverage
-        run: |
-          python - <<'PY'
-          import gzip, json, os, pathlib, collections, hashlib
-          root = pathlib.Path('/tmp/btpred-data')
-          paths = [
-              root/'kalshi_15m_live/KXBTC15M-20260810T003855Z-10800s.jsonl.gz',
-              root/'kalshi_perp/KXBTCPERP-20260810T003846Z-10800s.jsonl.gz',
-              root/'granular/spot_l2/BTCFDUSD-depth-20260810T003854Z-10800s.jsonl.gz',
-          ]
-          out = {'files': {}}
-          for p in paths:
-              info = {'compressed_bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()}
-              samples=[]; keys=collections.Counter(); types=collections.Counter(); n=0; first_ts=None; last_ts=None
-              with gzip.open(p, 'rt', encoding='utf-8') as f:
-                  for line in f:
-                      n += 1
-                      obj=json.loads(line)
-                      if len(samples)<5: samples.append(obj)
-                      keys.update(obj.keys())
-                      t=obj.get('type') or obj.get('event') or obj.get('channel') or obj.get('kind')
-                      types[str(t)] += 1
-                      ts=(obj.get('ts') or obj.get('timestamp') or obj.get('recv_ts') or obj.get('received_at') or obj.get('time'))
-                      if first_ts is None: first_ts=ts
-                      last_ts=ts
-              info.update({'records':n,'first_ts_candidate':first_ts,'last_ts_candidate':last_ts,
-                           'key_frequency':dict(keys),'type_frequency':dict(types),'samples':samples})
-              out['files'][str(p.relative_to(root))]=info
-          pathlib.Path('edge_outputs').mkdir(exist_ok=True)
-          pathlib.Path('edge_outputs/bootstrap.json').write_text(json.dumps(out, indent=2, default=str))
-          PY
-      - name: Commit bootstrap output
+      - name: Run exploratory round 1
+        run: python3 edge_research/explore_v1.py
+      - name: Commit research output
         run: |
           git config user.name 'EDGE Research Bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add edge_outputs/bootstrap.json
-          git diff --cached --quiet || git commit -m 'EDGE bootstrap output [skip ci]'
+          git add edge_outputs/explore_v1.json edge_outputs/explore_v1.md
+          git diff --cached --quiet || git commit -m 'EDGE exploratory round 1 output [skip ci]'
           git push origin HEAD:edge-research-20260811
