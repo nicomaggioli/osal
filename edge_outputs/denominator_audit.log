@@ -1,0 +1,106 @@
+{
+  "annual_slots": 35040,
+  "capture_union": {
+    "after_top10_mean": 1.7838344339622643,
+    "annualized": 183357.1963018868,
+    "chronological_thirds": [
+      4.57,
+      3.881611428571429,
+      7.265715714285714
+    ],
+    "fixed_3h_block_count": 8,
+    "fixed_3h_t_lcb95": 80622.70040089906,
+    "fixed_6h_block_count": 4,
+    "fixed_6h_t_lcb95": 63474.75401656246,
+    "mean_per_scheduled_slot": 5.232796698113208,
+    "moving_block_3h_lcb95": 129852.73607547172,
+    "moving_block_6h_lcb95": 139864.39132075472,
+    "scheduled_slots": 106,
+    "slots_with_parsed_market": 46,
+    "total_pnl": 554.67645,
+    "zero_or_missing_slots": 72
+  },
+  "capture_windows": [
+    {
+      "capture": "KXBTC15M-20260731T190212Z-10800s.jsonl.gz",
+      "end_s": 1785535332,
+      "start_s": 1785524532
+    },
+    {
+      "capture": "KXBTC15M-20260731T195913Z-10800s.jsonl.gz",
+      "end_s": 1785538753,
+      "start_s": 1785527953
+    },
+    {
+      "capture": "KXBTC15M-20260731T204522Z-10800s.jsonl.gz",
+      "end_s": 1785541522,
+      "start_s": 1785530722
+    },
+    {
+      "capture": "KXBTC15M-20260731T234548Z-10800s.jsonl.gz",
+      "end_s": 1785552348,
+      "start_s": 1785541548
+    },
+    {
+      "capture": "KXBTC15M-20260801T024606Z-10800s.jsonl.gz",
+      "end_s": 1785563166,
+      "start_s": 1785552366
+    },
+    {
+      "capture": "KXBTC15M-20260801T054633Z-10800s.jsonl.gz",
+      "end_s": 1785573993,
+      "start_s": 1785563193
+    },
+    {
+      "capture": "KXBTC15M-20260801T084650Z-10800s.jsonl.gz",
+      "end_s": 1785584810,
+      "start_s": 1785574010
+    },
+    {
+      "capture": "KXBTC15M-20260801T114704Z-10800s.jsonl.gz",
+      "end_s": 1785595624,
+      "start_s": 1785584824
+    },
+    {
+      "capture": "KXBTC15M-20260801T144719Z-10800s.jsonl.gz",
+      "end_s": 1785606439,
+      "start_s": 1785595639
+    },
+    {
+      "capture": "KXBTC15M-20260802T043308Z-10800s.jsonl.gz",
+      "end_s": 1785655988,
+      "start_s": 1785645188
+    },
+    {
+      "capture": "KXBTC15M-20260802T073326Z-10800s.jsonl.gz",
+      "end_s": 1785666806,
+      "start_s": 1785656006
+    }
+  ],
+  "full_elapsed_span": {
+    "after_top10_mean": 0.5832321656050956,
+    "annualized": 132180.5773757962,
+    "chronological_thirds": [
+      5.945679245283019,
+      3.052431730769231,
+      2.276923076923077
+    ],
+    "fixed_3h_block_count": 13,
+    "fixed_3h_t_lcb95": 75823.35425550076,
+    "fixed_6h_block_count": 6,
+    "fixed_6h_t_lcb95": 50854.267888668575,
+    "mean_per_scheduled_slot": 3.7722767515923565,
+    "moving_block_3h_lcb95": 76262.86379617834,
+    "moving_block_6h_lcb95": 69151.5515923567,
+    "scheduled_slots": 157,
+    "slots_with_parsed_market": 49,
+    "total_pnl": 592.24745,
+    "zero_or_missing_slots": 121
+  },
+  "records_outside_capture_union": [
+    1785524400,
+    1785541500,
+    1785552300,
+    1785573900
+  ]
+}
